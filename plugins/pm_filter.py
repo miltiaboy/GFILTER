@@ -224,7 +224,7 @@ async def advantage_spoll_choker(bot, query):
     movie = movies[(int(movie_))]
     temp_name = movie.replace(" ", "+")
     button = [[
-        InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url=f"https://google.com/search?q={movie}")
+        InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url=f"https://google.com/search?q={reqst_gle}")
     ]]
     await query.message.edit(script.TOP_ALRT_MSG)
     k = await manual_filters(bot, query.message, text=movie)
