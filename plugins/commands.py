@@ -24,17 +24,17 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        buttons = [[
-                    InlineKeyboardButton('• Gʀᴏᴜᴘ •', url='https://t.me/KLMovieGroup'),
-                    InlineKeyboardButton('• Cʜᴀɴɴᴇʟ •', url='https://t.me/team_kl')
+        buttons = [[             
+                    InlineKeyboardButton('• ᴄʜᴀɴɴᴇʟ •', url='https://t.me/team_kl'),
+                    InlineKeyboardButton('• ᴄʜᴇᴄᴋ ᴘᴍ •', url=f"https://t.me/{temp.U_NAME}?start=help")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         kd = await message.reply_photo(
         photo=random.choice(PICS),
-        caption=script.STARTER_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
-        await asyncio.sleep(15)
+        caption=script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+        await asyncio.sleep(20)
         await kd.delete()
-        await message.delete()        
+        await message.delete()
 
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
