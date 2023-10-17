@@ -2,6 +2,8 @@ import os
 import logging
 import random
 import asyncio
+import pytz
+import datetime
 from Script import script
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
@@ -23,16 +25,14 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('〆 Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ 〆', url='https://t.me/+3sc743KKHWoxZDY1')
-                  ],[
-                    InlineKeyboardButton('• ᴄʜᴀɴɴᴇʟ •', url='https://t.me/team_kl'),
-                    InlineKeyboardButton('• ᴄʜᴇᴄᴋ ᴘᴍ •', url=f"https://t.me/{temp.U_NAME}?start=help")
+                    InlineKeyboardButton('• Gʀᴏᴜᴘ •', url='https://t.me/KLMovieGroup'),
+                    InlineKeyboardButton('• Cʜᴀɴɴᴇʟ •', url='https://t.me/team_kl')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         kd = await message.reply_photo(
         photo=random.choice(PICS),
-        caption=script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
-        await asyncio.sleep(10)
+        caption=script.STARTER_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+        await asyncio.sleep(15)
         await kd.delete()
         await message.delete()        
 
@@ -55,12 +55,22 @@ async def start(client, message):
             InlineKeyboardButton('🏮 Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs 🏮', callback_data="group_info")
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
+        T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
+        Time = T.hour        
+        if Time < 12:
+            afsu="Gᴏᴏᴅ Mᴏʀɴɪɴɢ" 
+        elif Time < 15:
+            afsu="Gᴏᴏᴅ AғᴛᴇʀNᴏᴏɴ" 
+        elif Time < 20:
+            afsu="Gᴏᴏᴅ Eᴠᴇɴɪɴɢ"
+        else:
+            afsu="Gᴏᴏᴅ Nɪɢʜᴛ"    
         m=await message.reply_sticker("CAACAgIAAxkBAAE5teNk03mdcUwZgk5r0t7O_axeVvG_-wACJAwAAviQOEiWAywHzwABlxgeBA") 
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
-            caption=script.SUR_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            caption=script.START_TXT.format(afsu, message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -81,7 +91,7 @@ async def start(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
-            caption=script.SUR_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
