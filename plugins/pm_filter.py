@@ -8,7 +8,6 @@ import random
 import pytz
 import datetime
 import time
-import psutil, shutil, sys
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
