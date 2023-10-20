@@ -46,9 +46,11 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore♀️ommands and hashtags
     if user_id in ADMINS: return # ignore admins
     k = await message.reply_text(
-         text="<b><i>Hɪ Bʀᴏ , Yᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇs Fʀᴏᴍ Hᴇʀᴇ. Rᴇǫᴜᴇsᴛ Oɴ Oᴜʀ Mᴏᴠɪᴇ Gʀᴏᴜᴘ Oʀ Cʟɪᴄᴋ Rᴇǫᴜᴇsᴛ Hᴇʀᴇ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ​\n• നിങ്ങൾക്ക് ഇവിടെ നിന്ന് സിനിമകൾ ലഭിക്കില്ല. എന്റെ ഗ്രൂപ്പിൽ ചോദിക്ക് 👇</i></b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💝 Rᴇǫᴜᴇsᴛ Hᴇʀᴇ​ 💝", url=f"https://t.me/KLMovieGroup")]]))
-    await asyncio.sleep(20)
+         text="<b><i>Hɪ Bʀᴏ,\n• Yᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇs Fʀᴏᴍ Hᴇʀᴇ. Rᴇǫᴜᴇsᴛ Oɴ Oᴜʀ Mᴏᴠɪᴇ Gʀᴏᴜᴘ Oʀ Cʟɪᴄᴋ Rᴇǫᴜᴇsᴛ Hᴇʀᴇ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ​\n\n• നിങ്ങൾക്ക് ഇവിടെ നിന്ന് സിനിമകൾ ലഭിക്കില്ല. എന്റെ ഗ്രൂപ്പിൽ ചോദിക്ക്.</i></b>",   
+         reply_markup=InlineKeyboardMarkup([[
+             InlineKeyboardButton("💝 Rᴇǫᴜᴇsᴛ Hᴇʀᴇ​ 💝", url=f"https://t.me/KLMovieGroup"),
+             InlineKeyboardButton("💝 Rᴇǫᴜᴇsᴛ Hᴇʀᴇ​ 💝", url=f"https://t.me/KLMovieGroup")]]))
+    await asyncio.sleep(25)
     await k.delete()
     await message.delete()   
     
