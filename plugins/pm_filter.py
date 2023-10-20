@@ -37,29 +37,7 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 SPELL_CHECK = {}
-FILTER_MODE = {}
-
-@Client.on_message(filters.command('autofilter') & filters.user(ADMINS))
-async def fil_mod(client, message): 
-      mode_on = ["yes", "on", "true"]
-      mode_of = ["no", "off", "false"]
-
-      try: 
-         args = message.text.split(None, 1)[1].lower() 
-      except: 
-         return await message.reply("**𝙸𝙽𝙲𝙾𝙼𝙿𝙴𝚃𝙴𝙽𝚃 𝙲𝙾𝙼𝙼𝙰N𝙳...**")
-      
-      m = await message.reply("**𝚂𝙴𝚃𝚃𝙸𝙽𝙶.../**")
-
-      if args in mode_on:
-          FILTER_MODE[str(message.chat.id)] = "True" 
-          await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙴𝙽𝙰𝙱𝙻𝙴𝙳**")
-      
-      elif args in mode_of:
-          FILTER_MODE[str(message.chat.id)] = "False"
-          await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳**")
-      else:
-          await m.edit("𝚄𝚂𝙴 :- /autofilter on 𝙾𝚁 /autofilter off")
+autofilter off")
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
@@ -69,15 +47,11 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore♀️ommands and hashtags
     if user_id in ADMINS: return # ignore admins
     k = await message.reply_text(
-         text="<b><i>ʜᴇʏ ᴅᴜᴅᴇ, ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ᴏɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ​</i>👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎗️ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ​ 🎗️", url=f"https://t.me/KLMovieGroup")]]))
-    await asyncio.sleep(15)
+         text="<b><i>Hɪ Bʀᴏ , Yᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇs Fʀᴏᴍ Hᴇʀᴇ. Rᴇǫᴜᴇsᴛ Oɴ Oᴜʀ Mᴏᴠɪᴇ Gʀᴏᴜᴘ Oʀ Cʟɪᴄᴋ Rᴇǫᴜᴇsᴛ Hᴇʀᴇ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ​\n• നിങ്ങൾക്ക് ഇവിടെ നിന്ന് സിനിമകൾ ലഭിക്കില്ല. എന്റെ ഗ്രൂപ്പിൽ ചോദിക്ക് 👇</i></b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💝 Rᴇǫᴜᴇsᴛ Hᴇʀᴇ​ 💝", url=f"https://t.me/KLMovieGroup")]]))
+    await asyncio.sleep(20)
     await k.delete()
-    await message.delete()
-    await bot.send_message(
-        chat_id=LOG_CHANNEL,
-        text=f"<b>🍀 Pᴍ Mᴇssᴀɢᴇ ☘️\n\n📝 Mᴇssᴀɢᴇ ​:- {content}\n\n🤷 RᴇQᴜᴇꜱᴛᴇᴅ Bʏ :- {user}\n\n😋 Uꜱᴇʀ Iᴅ :- {user_id}</b>"
-)
+    await message.delete()   
     
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client,message):
