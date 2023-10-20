@@ -22,11 +22,11 @@ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ I Wɪʟʟ Gɪᴠᴇ Mᴏᴠ
 ◆ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v4.5.0 [ Sᴛᴀʙʟᴇ ]</b>"""
     
     SOURCE_TXT = """<b>
-◆ <u>Tʜɪꜱ Bᴏᴛ Iꜱ Nᴏᴛ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ.</u>
+◆ Tʜɪꜱ Bᴏᴛ Iꜱ Nᴏᴛ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ
 
-◆ Bᴏᴛ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ ~ <o>Private 😜</o> 
+◆ Bᴏᴛ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ ~ <u>Pʀɪᴠᴀᴛᴇ</u> 😶‍🌫️
 
-◆ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href='https://github.com/Joelkb/DQ-The-File-Donor'>Cʟɪᴄᴋ Hᴇʀᴇ</a></b>"""
+◆ Pᴜʙʟɪᴄ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href='https://github.com/Joelkb/DQ-The-File-Donor'>Cʟɪᴄᴋ Hᴇʀᴇ</a></b>"""
 
     MANUELFILTER_TXT = """<b><u>FILTERS COMMANDS</u></b>
 
@@ -52,12 +52,7 @@ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ I Wɪʟʟ Gɪᴠᴇ Mᴏᴠ
 
 • ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ's ᴘʀɪᴠᴀᴛᴇ.
 • ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇs ɴᴏᴛ ᴄᴏɴᴛᴀɪɴs ᴄᴀᴍʀɪᴘs, ᴘᴏʀɴ ᴀɴᴅ ꜰᴀᴋᴇ ꜰɪʟᴇs.
-• ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀsᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ ǫᴜᴏᴛᴇs. ɪ'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇs ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ.
-
-<b>★ /set_template - 𝚂𝙴𝚃 𝙲𝚄𝚂𝚃𝙾𝙼 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙵𝙾𝚁 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.</b>
-<b>★ /get_template - 𝙶𝙴𝚃 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙾𝙵 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.</b>
-<b>★ /autofilter on - 𝙴𝙽𝙰𝙱𝙻𝙴 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿𝚂.</b>
-<b>★ /autofilter off - 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿𝚂.</b>"""
+• ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀsᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ ǫᴜᴏᴛᴇs. ɪ'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇs ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ.</b>"""
 
     CONNECTION_TXT = """<b><u>CONNECTIONS NOTE:-</u></b>
 
@@ -148,7 +143,9 @@ Name - {}
 ⌬ YᴇAʀ : {year}
 ✇ LᴀNɢUᴀGᴇ : {languages}
 ⛦ RᴀTɪNɢ : {rating} / 10.0
-〄 QᴜAʟIᴛY : HDRip</b>"""
+〄 QᴜAʟIᴛY : HDRip
+
+★ ροωєяє∂ ϐγ : @Team_KL</b>"""
    
     CUSTOM_FILE_CAPTION = """<b>🗂️ Fɪʟᴇ Nᴀᴍᴇ :- {file_name}
 
