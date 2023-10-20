@@ -22,7 +22,7 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ 
     SOURCE_TXT = """<b>
 ◆ <u>Tʜɪꜱ Bᴏᴛ Iꜱ Nᴏᴛ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ.</u>
 
-◆ Bᴏᴛ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ ~ <sr>Private 😜</sr> 
+◆ Bᴏᴛ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ ~ <p>Private 😜</p> 
 
 ◆ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href='https://github.com/Joelkb/DQ-The-File-Donor'>Cʟɪᴄᴋ Hᴇʀᴇ</a></b>"""
 
