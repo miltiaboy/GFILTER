@@ -25,12 +25,12 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('• Fᴏʀ Mᴏʀᴇ Mᴏᴠɪᴇs Uᴘᴅᴀᴛᴇs •', url='t.me/Team_KL')
+                    InlineKeyboardButton("• Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs [Nᴇᴡ Gʀᴏᴜᴘ] •", url="https://t.me/+3sc743KKHWoxZDY1")                    
                   ],[
                     InlineKeyboardButton("• Gʀᴏᴜᴘ 𝟷 •", url="t.me/KLMovieGroup"),
                     InlineKeyboardButton("• ​Gʀᴏᴜᴘ 𝟸 •", url="t.me/KL_Group2")
                   ],[
-                    InlineKeyboardButton("• Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs™ [Nᴇᴡ Gʀᴏᴜᴘ] •", url="https://t.me/+3sc743KKHWoxZDY1")
+                    InlineKeyboardButton('• Fᴏʀ Mᴏʀᴇ Mᴏᴠɪᴇs Uᴘᴅᴀᴛᴇs •', url='t.me/Team_KL')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         kd = await message.reply_photo(
@@ -49,13 +49,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[            
-            InlineKeyboardButton('🎭 Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-            InlineKeyboardButton('🕵️ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat='')            
+            InlineKeyboardButton('• Bᴏᴛ Oᴡɴᴇʀ •', callback_data="owner_info"),
+            InlineKeyboardButton('• Sᴇᴀʀᴄʜ •', switch_inline_query_current_chat='')            
             ],[      
-            InlineKeyboardButton('✨ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('🔮 Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
+            InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about')
             ],[
-            InlineKeyboardButton('🏮 Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs 🏮', callback_data="group_info")
+            InlineKeyboardButton('• Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs •', callback_data="group_info")
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
@@ -84,13 +84,13 @@ async def start(client, message):
             await ForceSub(client, message)
             return
         buttons = [[            
-            InlineKeyboardButton('🎭 Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-            InlineKeyboardButton('🕵️ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat='')            
+            InlineKeyboardButton('• Bᴏᴛ Oᴡɴᴇʀ •', callback_data="owner_info"),
+            InlineKeyboardButton('• Sᴇᴀʀᴄʜ •', switch_inline_query_current_chat='')            
             ],[      
-            InlineKeyboardButton('✨ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('🔮 Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
+            InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about')
             ],[
-            InlineKeyboardButton('🏮 Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs 🏮', callback_data="group_info")
+            InlineKeyboardButton('• Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs •', callback_data="group_info")
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
