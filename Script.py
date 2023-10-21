@@ -214,7 +214,7 @@ Name - {}
     
 • Fᴜʟʟ Nᴀᴍᴇ : • HᴀᴄKᴇʀ Jʀ ~ 🕊 
 • Uꜱᴇʀɴᴀᴍᴇ : @Hacker_Jr
-• Lᴏɢᴏ Mᴀᴋᴇʀ Cʜᴀɴɴᴇʟ : <a href='t.me/PremiumlogoPro'>Pʀᴇᴍɪᴜᴍ Lᴏɢᴏ Pʀᴏ 🃏</a></b>"""
+• Lᴏɢᴏ Mᴀᴋᴇʀ : <a href='t.me/PremiumlogoPro'>Pʀᴇᴍɪᴜᴍ Lᴏɢᴏ Pʀᴏ 🃏</a></b>"""
 
     GROUP_INFO = """
 <b>⍟ Wᴇʟᴄᴏᴍᴇ Tᴏ Tᴇᴀᴍ Kʟ Lɪɴᴋs ⍟</b>"""
