@@ -54,7 +54,7 @@ async def answer(bot, query):
                                                   offset=offset)
 
     for file in files:
-        title=file.file_name
+        title='@Team_KL ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
         size=get_size(file.file_size)
         f_caption=file.caption
         if CUSTOM_FILE_CAPTION:
@@ -103,7 +103,9 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('• 𝘴ꫀꪖ𝘳ᥴꫝ ꪖᧁꪖ𝓲ꪀ •', switch_inline_query_current_chat=query)
+        ],[
+            InlineKeyboardButton("• ꪑꪮꪜ𝓲ꫀ 𝘳ꫀ𝘲ꪊꫀ𝘴𝓽 ᧁ𝘳ꪮꪊρ •", url="https://t.me/+3sc743KKHWoxZDY1")
         ]
         ]
     return InlineKeyboardMarkup(buttons)
