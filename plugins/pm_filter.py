@@ -580,6 +580,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⇍ Bᴀᴄᴋ Tᴏ Aʙᴏᴜᴛ ⇏', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto("https://telegra.ph/file/e753f50b93fb047d1f551.jpg")
+        )
         await query.message.edit_text(
             text=script.SOURCE_TXT,
             reply_markup=reply_markup,
@@ -692,10 +697,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )    
     elif query.data == "owner_info":
         buttons = [[
-            InlineKeyboardButton('⇍Bᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton ('Cᴏɴᴛᴀᴄᴛ', url="t.me/Sathan_Of_Telegram")
+            InlineKeyboardButton('⇍ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ⇏', callback_data='start'),            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto("https://telegra.ph/file/ade000e7f62811d851317.jpg")
+        )
         await query.message.edit_text(
             text=script.OWNER_INFO,
             reply_markup=reply_markup,
@@ -717,6 +726,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("⇍ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ⇏", callback_data="start")
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto("https://telegra.ph/file/397c2cf3d050c643c0ff6.jpg")
+        )
         await query.message.edit_text(
             text=script.GROUP_INFO,
             reply_markup=reply_markup,
