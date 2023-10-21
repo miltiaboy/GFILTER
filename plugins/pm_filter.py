@@ -551,8 +551,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• Cᴏɴɴᴇᴄᴛɪᴏɴꜱ •', callback_data='coct'),
             InlineKeyboardButton('• Exᴛʀᴀ Mᴏᴅꜱ •', callback_data='extra')                        
         ], [
-            InlineKeyboardButton('⇍ Bᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('〄 Sᴛᴀᴛᴜs', callback_data='stats')
+            InlineKeyboardButton('⇍ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ⇏', callback_data='start')            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(                     
@@ -563,18 +562,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('ᠰ Sᴇʀᴠᴇʀ Iɴꜰᴏ', callback_data='statx'),
-            InlineKeyboardButton('✇ Sᴏᴜʀᴄᴇ', callback_data='source')
+            InlineKeyboardButton('〄 Sᴛᴀᴛᴜs', callback_data='stats')          
         ], [
             InlineKeyboardButton('⇍ Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('⌬ ᥴꪶꪮꪀꫀ', callback_data='close_data')
+            InlineKeyboardButton('✇ Sᴏᴜʀᴄᴇ', callback_data='source')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer("ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍᴇ 🥳")
+        await query.answer("Kɴᴏᴡ Aʙᴏᴜᴛ Mᴇ 😈")
     elif query.data == "source":
         buttons = [[           
             InlineKeyboardButton('⇍ Bᴀᴄᴋ Tᴏ Aʙᴏᴜᴛ ⇏', callback_data='about')
