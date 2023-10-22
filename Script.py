@@ -64,19 +64,15 @@ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ I Wɪʟʟ Gɪᴠᴇ Mᴏᴠ
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
 
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
+    EXTRAMOD_TXT = """<b><u>EXTRA MODULES COMMANDS</u></b>
 
-<b>NOTE:</b>
-these are the extra features of Elsa
-
-<b>Commands and Usage:</b>
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
-   
-    ADMIN_TXT = """<b><u>ADMIN MODS COMMANDS</u></b>
 
+    ADMIN_TXT = """<b><u>ADMIN MODS COMMANDS</u></b>
+    
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
 • /delete - <code>to delete a specific file from db.</code>
@@ -201,13 +197,17 @@ Name - {}
 
     CUDNT_FND = """<b>✯ Nᴏ Mᴏᴠɪᴇ Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ <u>{}</u>
 
-✯ Cʜᴏᴏsᴇ Tʜᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ Bᴇʟᴏᴡ 👇</b>​"""
+✯ Cʜᴏᴏsᴇ Tʜᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ Bᴇʟᴏᴡ 👇{}</b>​"""
 
     I_CUDNT = """ʜᴇʟʟᴏ {}, ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ɪɴ ᴛʜᴀᴛ ɴᴀᴍᴇ​"""
 
     I_CUD_NT = """ʜᴇʟʟᴏ {}, ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ​ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ . ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ​"""    
     
     REPRT_MSG = """ Reported To Admin"""    
+
+    WHYJOIN = """Iғ Tʜᴇ Gʀᴏᴜᴘ Cᴏᴘʏ Rɪɢʜᴛ Iꜱ Lᴏꜱᴛ, Wʜᴇɴ A Nᴇᴡ Gʀᴏᴜᴘ Iꜱ Sᴛᴀʀᴛᴇᴅ, Iᴛ Wɪʟʟ Bᴇ Nᴏᴛɪғɪᴇᴅ Oɴ Tʜɪꜱ Cʜᴀɴɴᴇʟ 🤥
+
+© @Team_KL"""
 
     OWNER_INFO = """
 <b>⍟───[ Oᴡɴᴇʀ Dᴇᴛᴀɪʟꜱ ]───⍟
