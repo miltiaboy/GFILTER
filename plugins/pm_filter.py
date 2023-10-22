@@ -164,7 +164,7 @@ async def advantage_spoll_choker(bot, query):
     button = [[
         InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url="t.me/+3sc743KKHWoxZDY1")
     ]]
-    await query.message.edit(script.CHK_MOV_TXT)  #checkthemovie in db script
+    await query.message.edit(script.TOP_ALRT_MSG)  #checkthemovie in db script
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
