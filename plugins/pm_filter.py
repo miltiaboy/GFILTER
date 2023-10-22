@@ -1022,7 +1022,7 @@ async def advantage_spell_chok(client, msg):
         ]]
         k = await msg.reply_photo(
             photo=SPELL_IMG, 
-            caption=script.SPEL_CHK.format(mv_rqst),
+            caption=script.I_CUDNT.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
@@ -1036,8 +1036,7 @@ async def advantage_spell_chok(client, msg):
         button = [[
         InlineKeyboardButton('⌬ ᧁꪮꪮᧁꪶꫀ ⌬', url=f'https://google.com/search?q={reqst_gle}'),
         InlineKeyboardButton('✽ 𝓲ꪑᦔ᥇ ✽', url=f'https://www.imdb.com/find/?q={reqst_gle}&ref_=nv_sr_sm')
-        ]]
-        await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
+        ]]        
         k = await msg.reply_photo(
             photo=SPELL_IMG, 
             caption=script.I_CUDNT.format(mv_rqst),
