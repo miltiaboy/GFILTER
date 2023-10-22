@@ -162,7 +162,7 @@ async def advantage_spoll_choker(bot, query):
     movie = movies[(int(movie_))]
     temp_name = movie.replace(" ", "+")
     button = [[
-        InlineKeyboardButton("🔎 Sᴇᴀʀᴄʜ Fᴏʀ Gᴏᴏɢʟᴇ 🔍", url=f"https://google.com/search?q=")
+        InlineKeyboardButton(f"🔎 Sᴇᴀʀᴄʜ Fᴏʀ Gᴏᴏɢʟᴇ 🔍", url=f"https://google.com/search?q={mv_rqst}")
     ]]
     await query.message.edit(script.TOP_ALRT_MSG)
     k = await manual_filters(bot, query.message, text=movie)
@@ -1052,7 +1052,7 @@ async def advantage_spell_chok(client, msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
-        caption=(script.CUDNT_FND.format(reqstr.mention)),
+        caption=(script.CUDNT_FND.format(mv_rqst)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
     await asyncio.sleep(35)
