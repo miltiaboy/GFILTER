@@ -160,11 +160,7 @@ async def advantage_spoll_choker(bot, query):
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movie = movies[(int(movie_))]
-    temp_name = movie.replace(" ", "+")
-    button = [[
-        InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url="t.me/+3sc743KKHWoxZDY1")
-    ]]
-    await query.message.edit(script.TOP_ALRT_MSG)
+    await query.message.edit(script.CHK_MOV_TXT)
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -175,11 +171,8 @@ async def advantage_spoll_choker(bot, query):
         else:
             reqstr1 = query.from_user.id if query.from_user else 0
             reqstr = await bot.get_users(reqstr1)            
-            k = await query.message.edit(
-                text=script.MVE_NT_FND,
-                reply_markup=InlineKeyboardMarkup(button)
-            ) 
-            await asyncio.sleep(45)
+            k = await query.message.edit(script.MVE_NT_FND)
+            await asyncio.sleep(20)
             await k.delete()
             
 @Client.on_callback_query()
