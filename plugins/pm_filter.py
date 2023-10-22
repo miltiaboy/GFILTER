@@ -151,6 +151,7 @@ async def next_page(bot, query):
 #SpellCheck bug fixing
 @Client.on_callback_query(filters.regex(r"^spol"))
 async def advantage_spoll_choker(bot, query):
+    mv_rqst = msg.text
     _, user, movie_ = query.data.split('#')
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
@@ -160,9 +161,10 @@ async def advantage_spoll_choker(bot, query):
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movie = movies[(int(movie_))]
+    reqst_gle = mv_rqst.replace(" ", "+")
     temp_name = movie.replace(" ", "+")
     button = [[
-        InlineKeyboardButton(f"🔎 Sᴇᴀʀᴄʜ Fᴏʀ Gᴏᴏɢʟᴇ 🔍", url=f"https://google.com/search?q={temp_name}")
+        InlineKeyboardButton(f"🔎 Sᴇᴀʀᴄʜ Fᴏʀ Gᴏᴏɢʟᴇ 🔍", url=f"https://google.com/search?q={mv_rqst}")
     ]]
     await query.message.edit(script.TOP_ALRT_MSG)
     k = await manual_filters(bot, query.message, text=movie)
