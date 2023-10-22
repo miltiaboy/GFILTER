@@ -47,7 +47,7 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore♀️ommands and hashtags
     if user_id in ADMINS: return # ignore admins
     k = await message.reply_text(
-         text=f"<b><i>Hɪ Bʀᴏ 🙋 {user},\n\n• Yᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇs Fʀᴏᴍ Hᴇʀᴇ. Rᴇǫᴜᴇsᴛ Oɴ Oᴜʀ Mᴏᴠɪᴇ Gʀᴏᴜᴘ Oʀ Cʟɪᴄᴋ Rᴇǫᴜᴇsᴛ Hᴇʀᴇ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ​\n\n• നിങ്ങൾക്ക് ഇവിടെ നിന്ന് സിനിമകൾ ലഭിക്കില്ല. എന്റെ ഗ്രൂപ്പിൽ ചോദിക്ക്.</i>\n\n• ροωєяє∂ ϐγ :- @Team_KL</b>",   
+         text=f"<b><i>Hɪ Bʀᴏ {user},\n\n• Yᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇs Fʀᴏᴍ Hᴇʀᴇ. Rᴇǫᴜᴇsᴛ Oɴ Oᴜʀ Mᴏᴠɪᴇ Gʀᴏᴜᴘ Oʀ Cʟɪᴄᴋ Rᴇǫᴜᴇsᴛ Hᴇʀᴇ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ​\n\n• നിങ്ങൾക്ക് ഇവിടെ നിന്ന് സിനിമകൾ ലഭിക്കില്ല. എന്റെ ഗ്രൂപ്പിൽ ചോദിക്ക്.</i>\n\n• ροωєяє∂ ϐγ :- @Team_KL</b>",   
          reply_markup=InlineKeyboardMarkup([[
              InlineKeyboardButton("💝 Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs 𝟹.𝟶​ 💝", url=f"https://t.me/KLMovieGroup")
              ],[
@@ -162,7 +162,7 @@ async def advantage_spoll_choker(bot, query):
     movie = movies[(int(movie_))]
     temp_name = movie.replace(" ", "+")
     button = [[
-        InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url=f"https://google.com/search?q=")
+        InlineKeyboardButton("🔎 Sᴇᴀʀᴄʜ Fᴏʀ Gᴏᴏɢʟᴇ 🔍", url=f"https://google.com/search?q=")
     ]]
     await query.message.edit(script.TOP_ALRT_MSG)
     k = await manual_filters(bot, query.message, text=movie)
@@ -179,7 +179,7 @@ async def advantage_spoll_choker(bot, query):
                 text=script.MVE_NT_FND,
                 reply_markup=InlineKeyboardMarkup(button)
             ) 
-            await asyncio.sleep(35)
+            await asyncio.sleep(45)
             await k.delete()
             
 @Client.on_callback_query()
