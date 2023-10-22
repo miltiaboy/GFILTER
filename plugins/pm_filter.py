@@ -970,7 +970,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"🎪 ᴛɪᴛɪʟᴇ {search}\n\n┏ 🤴 ᴀsᴋᴇᴅʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ​</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/CT_Arena'>ᴄinemathattakam​</a>\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}"
+        cap = f"<b>┏⍞ Tɪᴛɪʟᴇ : {search}\n┣❐ Asᴋᴇᴅ Bʏ : {message.from_user.mention}\n┣⎙ Fɪʟᴇs : [{total_results}](tg://need_update_for_some_feature)\n┗〄 Pᴏᴡᴇʀᴇᴅ Bʏ : [kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs](https://t.me/Team_KL)</b>"
     if imdb and imdb.get('poster'):
         try:
             send=await message.reply_photo(photo="https://telegra.ph/file/60d2e897bfdf063f81545.jpg", caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
@@ -1015,17 +1015,27 @@ async def advantage_spell_chok(client, msg):
         movies = await get_poster(mv_rqst, bulk=True)
     except Exception as e:
         logger.exception(e)
-        await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-        k = await msg.reply(script.I_CUDNT.format(reqstr.mention))
-        await asyncio.sleep(8)
-        await k.delete()
+        reqst_gle = mv_rqst.replace(" ", "+")
+        button = [[
+        InlineKeyboardButton('⌬ ᧁꪮꪮᧁꪶꫀ ⌬', url=f'https://google.com/search?q={reqst_gle}'),
+        InlineKeyboardButton('✽ 𝓲ꪑᦔ᥇ ✽', url=f'https://www.imdb.com/find/?q={reqst_gle}&ref_=nv_sr_sm')
+        ]]
+        k = await msg.reply_photo(
+            photo=SPELL_IMG, 
+            caption=script.SPEL_CHK.format(mv_rqst),
+            reply_markup=InlineKeyboardMarkup(button),
+            reply_to_message_id=msg.id
+        )
+        await asyncio.sleep(35)
         await msg.delete()
+        await k.delete()      
         return
     movielist = [] #error fixed
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
-                   InlineKeyboardButton("Gᴏᴏɢʟᴇ", url=f"https://www.google.com/search?q={reqst_gle}")
+        InlineKeyboardButton('⌬ ᧁꪮꪮᧁꪶꫀ ⌬', url=f'https://google.com/search?q={reqst_gle}'),
+        InlineKeyboardButton('✽ 𝓲ꪑᦔ᥇ ✽', url=f'https://www.imdb.com/find/?q={reqst_gle}&ref_=nv_sr_sm')
         ]]
         await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
         k = await msg.reply_photo(
@@ -1033,7 +1043,7 @@ async def advantage_spell_chok(client, msg):
             caption=script.I_CUDNT.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(button)
         )
-        await asyncio.sleep(30)
+        await asyncio.sleep(35)
         await k.delete()
         await msg.delete()
         return
@@ -1049,13 +1059,13 @@ async def advantage_spell_chok(client, msg):
         ]
         for k, movie_name in enumerate(movielist)
     ]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="✘ Cʟᴏsᴇ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
-    await asyncio.sleep(35)
+    await asyncio.sleep(45)
     await spell_check_del.delete()
     await msg.delete()
 
