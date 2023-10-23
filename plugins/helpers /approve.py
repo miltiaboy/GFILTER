@@ -1,9 +1,8 @@
 import os
 import asyncio
 from pyrogram import Client, filters
-from pyrogram.types import Message, User, ChatJoinRequest
+from pyrogram.types import Message, User, InlineKeyboardMarkup, InlineKeyboardButton, ChatJoinRequest
 from info import CHAT_ID, TEXT, APPROVED 
-
 
 @Client.on_chat_join_request((filters.group | filters.channel) & filters.chat(CHAT_ID) if CHAT_ID else (filters.group | filters.channel))
 async def autoapprove(client, message: ChatJoinRequest):
