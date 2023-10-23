@@ -12,6 +12,6 @@ async def goodbye(bot, message):
 
 @Client.on_message(filters.regex("http") & filters.regex("www") | filters.regex("https") | filters.regex("t.me") & filters.incoming)
 async def nolink(bot, message):
-	user_id = message.from_user.id
-        if user_id in ADMINS: return # ignore admins
-	await message.delete()
+    user_id = message.from_user.id
+    if user_id in ADMINS: return 
+    await message.delete()
