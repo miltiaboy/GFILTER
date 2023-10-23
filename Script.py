@@ -243,7 +243,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
     APPROVED_TEXT = """<b><i>🙋 Hello {mention}
 
 ◈ Your Request To Joined In ➤
- ❰<u>{title}</u>❱ Successfully.
+ <u>{title}</u> Successfully.
 
 ◈ Tʜᴀɴᴋ Yᴏᴜ ❤️ {mention} 
 
