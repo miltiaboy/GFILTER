@@ -23,6 +23,5 @@ async def autoapprove(client, message: ChatJoinRequest):
         caption=TEXT.format(mention=user.mention, title=chat.title),
         reply_markup=InlineKeyboardMarkup(buttons)
         )   
-    await asyncio.sleep(20)
+    await asyncio.sleep(45)
     await k.delete()
-    await message.delete()
