@@ -167,7 +167,6 @@ async def advantage_spoll_choker(bot, query):
         InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url="t.me/+3sc743KKHWoxZDY1")
     ]]
     await query.message.edit(script.TOP_ALRT_MSG) 
-    await query.message.delete()
     gl = await global_filters(bot, query.message, text=movie)
     if gl == False:
         k = await manual_filters(bot, query.message, text=movie)
