@@ -15,3 +15,9 @@ async def nolink(bot, message):
     user_id = message.from_user.id
     if user_id in ADMINS: return 
     await message.delete()
+	
+@Client.on_message(filters.forwarded & filters.incoming)
+async def forward(bot, message):
+    user_id = message.from_user.id
+    if user_id in ADMINS: return 
+    await message.delete()
