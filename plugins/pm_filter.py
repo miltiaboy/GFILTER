@@ -179,8 +179,11 @@ async def advantage_spoll_choker(bot, query):
             else:
                 reqstr1 = query.from_user.id if query.from_user else 0
                 reqstr = await bot.get_users(reqstr1)
-                k = await query.message.edit(script.MVE_NT_FND)
-                await asyncio.sleep(10)
+                k = await query.message.edit(
+                    text=script.MVE_NT_FND,
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url=f"https://google.com/search?q={movie}")]])
+                ) 
+                await asyncio.sleep(35)
                 await k.delete()
            
 @Client.on_callback_query()
