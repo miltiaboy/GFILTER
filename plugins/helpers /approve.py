@@ -12,7 +12,12 @@ async def autoapprove(client, message: ChatJoinRequest):
     chat=message.chat 
     user=message.from_user 
     print(f"{user.first_name} Joined (Approved)") 
-    await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)   
+    await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)       
+    buttons = [[
+                InlineKeyboardButton('• Jᴏɪɴ Gʀᴏᴜᴘ¹ •', url='https://t.me/+pyrfAbBUsMExOTZl'),       
+                InlineKeyboardButton('• Jᴏɪɴ Gʀᴏᴜᴘ² •', url='https://t.me/+_B8Y75f6gGQ5MjU1')
+            ]]      
+    reply_markup = InlineKeyboardMarkup(buttons)
     T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
     Time = T.hour        
     if Time < 12:
@@ -22,18 +27,14 @@ async def autoapprove(client, message: ChatJoinRequest):
     elif Time < 20:
         afsu="Gᴏᴏᴅ Eᴠᴇɴɪɴɢ"
     else:
-        afsu="Gᴏᴏᴅ Nɪɢʜᴛ"    
-    buttons = [[
-                InlineKeyboardButton('• Jᴏɪɴ Gʀᴏᴜᴘ¹ •', url='https://t.me/+pyrfAbBUsMExOTZl'),       
-                InlineKeyboardButton('• Jᴏɪɴ Gʀᴏᴜᴘ² •', url='https://t.me/+_B8Y75f6gGQ5MjU1')
-            ]]        
+        afsu="Gᴏᴏᴅ Nɪɢʜᴛ"
     k = await client.send_photo(
         photo=random.choice(PICS),
         chat_id=message.from_user.id, 
         caption=TEXT.format(afsu, mention=user.mention, title=chat.title),
-        reply_markup=InlineKeyboardMarkup(buttons)
+        reply_markup=reply_markup
         )   
-    await asyncio.sleep(7)
+    await asyncio.sleep(20)
     await k.delete()
     await message.delete()
     
