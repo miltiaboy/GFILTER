@@ -242,11 +242,13 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     APPROVED_TEXT = """<b><i>🙋 Hello {mention}
 
-◈ Your Request To Joined In '{title}' Successfully.
+◈ Your Request To Joined 
+
+◈ <u>{title}</u> Successfully.
 
 ⎋ Tʜᴀɴᴋ Yᴏᴜ ❤️ {mention} 
 
-• ροωєяє∂ ϐγ :- @Team_KL</i></b>"""
+◈ ροωєяє∂ ϐγ :- @Team_KL</i></b>"""
 
     AFTER_TXT = """<b>Hᴇʏ Tʜᴇʀᴇ 👋, {} Yᴏᴜʀ Lᴀsᴛ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Hᴀs Bᴇᴇɴ Dᴇʟᴇᴛᴇᴅ 🛑 Bᴇᴄᴀᴜsᴇ Oғ Cᴏᴘʏʀɪɢʜᴛ Issᴜᴇs...©️.
     
