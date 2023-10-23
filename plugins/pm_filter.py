@@ -666,7 +666,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if query.from_user.id in ADMINS:
             await query.message.edit_text(text=script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
-            await query.answer("I Tʜɪɴᴋ Yᴏᴜ Aʀᴇ Nᴏᴛ Mʏ Aᴅᴍɪɴ...\nSᴏ Tʜɪꜱ Cᴏᴍᴍᴇɴᴛ Iꜱ Nᴏᴛ Fᴏʀ Yᴏᴜ 🤭", show_alert=True)  
+            await query.answer("Sᴏʀʀʏ Tʜɪs Mᴇɴᴜ Oɴʟʏ Fᴏʀ Mʏ Aᴅᴍɪɴ. 🤒 Oᴏᴘs ❗️", show_alert=True)  
     elif query.data == "store_file":
         buttons = [[
             InlineKeyboardButton('⇍ Bᴀᴄᴋ', callback_data='help')
@@ -699,7 +699,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if query.from_user.id in ADMINS:
             await query.message.edit_text(text=script.GLOBE_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
-            await query.answer("Aᴅᴍɪɴs Oɴʟʏ. Sᴏʀʀʏ 🤭", show_alert=True)  
+            await query.answer("Sᴏʀʀʏ Tʜɪs Mᴇɴᴜ Oɴʟʏ Fᴏʀ Mʏ Aᴅᴍɪɴ. 🤒 Oᴏᴘs❗️", show_alert=True)  
     elif query.data == "owner_info":
         buttons = [[
             InlineKeyboardButton('⇍ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ⇏', callback_data='start'),            
