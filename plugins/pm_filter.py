@@ -164,7 +164,7 @@ async def advantage_spoll_choker(bot, query):
     movie = re.sub(r"\s+", " ", movie).strip()
     temp_name = movie.replace(" ", "+")
     button = [[
-        InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url="t.me/+3sc743KKHWoxZDY1")
+        InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url=f"https://google.com/search?q={movie}")
     ]]
     await query.message.edit(script.TOP_ALRT_MSG)  #checkthemovie in db script
     gl = await global_filters(bot, query.message, text=movie)
@@ -177,11 +177,9 @@ async def advantage_spoll_choker(bot, query):
                 k = (movie, files, offset, total_results)
                 await auto_filter(bot, query, k)
             else:
-                reqstr1 = query.from_user.id if query.from_user else 0
-                reqstr = await bot.get_users(reqstr1)
                 k = await query.message.edit(
                     text=script.MVE_NT_FND,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url=f"https://google.com/search?q={movie}")]])
+                    reply_markup=InlineKeyboardMarkup(button)
                 ) 
                 await asyncio.sleep(35)
                 await k.delete()
