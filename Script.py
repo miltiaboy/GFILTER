@@ -114,13 +114,13 @@ ID - <code>{}</code>
 Name - {}
 """
     FILE_MSG = """
-<b>Hai 👋 {} </b>😍
+<b>Hai 👋 {} 😍
 
-<b>📫 Your File is Ready</b>
+📫 Your File is Ready
 
-<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>{}</code>              
+📂 Fɪʟᴇ Nᴀᴍᴇ: <code>{}</code>              
                        
-<b>⚙️ Fɪʟᴇ Sɪᴢᴇ</b> : <b>{}</b>
+⚙️ Fɪʟᴇ Sɪᴢᴇ: {}
 """
     CHANNEL_CAP = """
 <b>Hai 👋 {}</b> 😍
@@ -242,18 +242,14 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     APPROVED_TEXT = """<b><i>🙋 Hello {mention}
 
-◈ Your Request To Joined 
+◈ Your Request To Joined In ➤
+ ❰<u>{title}</u>❱ Successfully.
 
-◈ <u>{title}</u> Successfully.
-
-⎋ Tʜᴀɴᴋ Yᴏᴜ ❤️ {mention} 
+◈ Tʜᴀɴᴋ Yᴏᴜ ❤️ {mention} 
 
 ◈ ροωєяє∂ ϐγ :- @Team_KL</i></b>"""
 
-    AFTER_TXT = """<b>Hᴇʏ Tʜᴇʀᴇ 👋, {} Yᴏᴜʀ Lᴀsᴛ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Hᴀs Bᴇᴇɴ Dᴇʟᴇᴛᴇᴅ 🛑 Bᴇᴄᴀᴜsᴇ Oғ Cᴏᴘʏʀɪɢʜᴛ Issᴜᴇs...©️.
+    AFTER_TXT = """<b>Hᴇʏ Tʜᴇʀᴇ 👋, {} Yᴏᴜʀ Lᴀsᴛ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Hᴀs Bᴇᴇɴ Dᴇʟᴇᴛᴇᴅ 🛑 Bᴇᴄᴀᴜsᴇ Oғ Cᴏᴘʏʀɪɢʜᴛ Issᴜᴇs...
     
-    Kɪɴᴅʟʏ Rᴇᴏ̨ᴜᴇsᴛ Aɢᴀɪɴ Fᴏʀ Yᴏᴜʀ Fɪʟᴇs ☺️
-    
-    Tʜᴀɴᴋ Yᴏᴜ ❤️
-    Tᴇᴀᴍ [CT™]</b>"""
+    Kɪɴᴅʟʏ Rᴇᴏ̨ᴜᴇsᴛ Aɢᴀɪɴ Fᴏʀ Yᴏᴜʀ Fɪʟᴇs.☺️</b>"""
     
