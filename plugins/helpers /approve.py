@@ -17,7 +17,6 @@ async def autoapprove(client, message: ChatJoinRequest):
                 InlineKeyboardButton('• Jᴏɪɴ Gʀᴏᴜᴘ¹ •', url='https://t.me/+pyrfAbBUsMExOTZl'),       
                 InlineKeyboardButton('• Jᴏɪɴ Gʀᴏᴜᴘ² •', url='https://t.me/+_B8Y75f6gGQ5MjU1')
             ]]      
-    reply_markup = InlineKeyboardMarkup(buttons)
     T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
     Time = T.hour        
     if Time < 12:
@@ -32,9 +31,5 @@ async def autoapprove(client, message: ChatJoinRequest):
         photo=random.choice(PICS),
         chat_id=message.from_user.id, 
         caption=TEXT.format(afsu, mention=user.mention, title=chat.title),
-        reply_markup=reply_markup
+        reply_markup=InlineKeyboardMarkup(buttons)
         )   
-    await asyncio.sleep(20)
-    await k.delete()
-    await message.delete()
-    
