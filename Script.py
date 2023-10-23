@@ -240,6 +240,13 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 • /pbatch - <code>Jᴜsᴛ ʟɪᴋᴇ /batch, ʙᴜᴛ ᴛʜᴇ ғɪʟᴇs ᴡɪʟʟ ʙᴇ sᴇɴᴅ ᴡɪᴛʜ ғᴏʀᴡᴀʀᴅ ʀᴇsᴛʀɪᴄᴛɪᴏɴs.</code>
 • /plink - <code>Jᴜsᴛ ʟɪᴋᴇ /link, ʙᴜᴛ ᴛʜᴇ ғɪʟᴇ ᴡɪʟʟ ʙᴇ sᴇɴᴅ ᴡɪᴛʜ ғᴏʀᴡᴀʀᴅ ʀᴇsᴛʀɪᴄᴛɪᴏɴ.</code>"""
 
+    APPROVED_TEXT = """Hello 👋 {mention}
+
+◈ Your Request to joined in '{title}' Successfully ✓
+
+⎋ Tʜᴀɴᴋ Yᴏᴜ ❤️ {mention} 
+
+Tᴇᴀᴍ KL"""
 
     AFTER_TXT = """<b>Hᴇʏ Tʜᴇʀᴇ 👋, {} Yᴏᴜʀ Lᴀsᴛ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Hᴀs Bᴇᴇɴ Dᴇʟᴇᴛᴇᴅ 🛑 Bᴇᴄᴀᴜsᴇ Oғ Cᴏᴘʏʀɪɢʜᴛ Issᴜᴇs...©️.
     
