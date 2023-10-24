@@ -1061,7 +1061,7 @@ async def advantage_spell_chok(client, msg):
     btn.append([InlineKeyboardButton(text="✘ ᥴꪶꪮ𝘴ꫀ⁶ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
-        text=(script.CUDNT_FND.format(mv_rqst)),
+        caption=(script.CUDNT_FND.format(mv_rqst)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
     await asyncio.sleep(35)
