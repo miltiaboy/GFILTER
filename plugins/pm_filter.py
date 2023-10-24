@@ -886,7 +886,7 @@ async def auto_filter(client, msg, spoll=False):
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, msg)
                 else:
-                    await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, search)))
+                    #await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, search)))
                     return
         else:
             return
@@ -1000,7 +1000,6 @@ async def auto_filter(client, msg, spoll=False):
     await asyncio.sleep(7)
     await sts.delete()
       
-
 async def advantage_spell_chok(client, msg):
     mv_id = msg.id
     mv_rqst = msg.text
@@ -1010,7 +1009,7 @@ async def advantage_spell_chok(client, msg):
     query = re.sub(
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
         "", msg.text, flags=re.IGNORECASE)  # plis contribute some common words
-    query = query.strip() + " movie"
+    query = re.sub(r"\s+", " ", query).strip() + "movie"
     try:
         movies = await get_poster(mv_rqst, bulk=True)
     except Exception as e:
@@ -1047,22 +1046,23 @@ async def advantage_spell_chok(client, msg):
         await msg.delete()
         await k.delete()
         return
-    movielist = [movie.get('title') for movie in movies]
+    movielist += [movie.get('title') for movie in movies]
+    movielist += [f"{movie.get('title')} {movie.get('year')}" for movie in movies]
     SPELL_CHECK[mv_id] = movielist
     btn = [
         [
             InlineKeyboardButton(
-                text=f"◉ {movie_name.strip()}",
+                text=f"◈ {movie_name.strip()}",
                 callback_data=f"spol#{reqstr1}#{k}",
             )
         ]
         for k, movie_name in enumerate(movielist)
     ]
     btn.append([InlineKeyboardButton(text="✘ ᥴꪶꪮ𝘴ꫀ⁶ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
-    spell_check_del = await msg.reply_text(
+    spell_check_del = await msg.reply_photo(
+        photo=(SPELL_IMG),
         text=(script.CUDNT_FND.format(mv_rqst)),
-        reply_markup=InlineKeyboardMarkup(btn),
-        reply_to_message_id=msg.id
+        reply_markup=InlineKeyboardMarkup(btn)
     )
     await asyncio.sleep(35)
     await spell_check_del.delete()
@@ -1091,7 +1091,7 @@ async def manual_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(40)
+                            await asyncio.sleep(140)
                             await kk.delete()
                             await message.delete()
                         else:
@@ -1103,7 +1103,7 @@ async def manual_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(40)
+                            await asyncio.sleep(140)
                             await grg.delete()
                             await message.delete()
                     elif btn == "[]":
@@ -1113,7 +1113,7 @@ async def manual_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(40)
+                        await asyncio.sleep(140)
                         await joelkb.delete()
                         await message.delete()
                     else:
@@ -1124,7 +1124,7 @@ async def manual_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(40)
+                        await asyncio.sleep(140)
                         await dlt.delete()
                         await message.delete()
                 except Exception as e:
@@ -1157,7 +1157,7 @@ async def global_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(40)
+                            await asyncio.sleep(140)
                             await joelkb.delete()
                             await message.delete()
                             
@@ -1170,7 +1170,7 @@ async def global_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(40)
+                            await asyncio.sleep(140)
                             await hmm.delete()
                             await message.delete()
 
@@ -1181,7 +1181,7 @@ async def global_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(40)
+                        await asyncio.sleep(140)
                         await oto.delete()
                         await message.delete()
 
@@ -1193,7 +1193,7 @@ async def global_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(40)
+                        await asyncio.sleep(140)
                         await dlt.delete()
                         await message.delete()
  
