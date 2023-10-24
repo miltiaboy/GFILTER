@@ -181,7 +181,7 @@ async def advantage_spoll_choker(bot, query):
                     text=script.MVE_NT_FND,
                     reply_markup=InlineKeyboardMarkup(button)
                 ) 
-                await asyncio.sleep(35)
+                await asyncio.sleep(30)
                 await k.delete()
            
 @Client.on_callback_query()
@@ -870,7 +870,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_reply_markup(reply_markup)
     await query.answer(MSG_ALRT)
 
-
 async def auto_filter(client, msg, spoll=False):
     reqstr1 = msg.from_user.id if msg.from_user else 0
     reqstr = await client.get_users(reqstr1)
@@ -989,16 +988,16 @@ async def auto_filter(client, msg, spoll=False):
     mention = message.from_user.mention
     grp_id = message.chat.id
     try:
-        await asyncio.sleep(100)
+        await asyncio.sleep(150)
         await message.delete(True)
         await send.delete(True)
     except Exception as e:
         logger.exception(e)
-        await asyncio.sleep(100)
+        await asyncio.sleep(150)
         await message.delete(True)
         await send.delete(True)
     sts = await client.send_message(grp_id, script.AFTER_TXT.format(mention))
-    await asyncio.sleep(30)
+    await asyncio.sleep(7)
     await sts.delete()
       
 
@@ -1018,18 +1017,16 @@ async def advantage_spell_chok(client, msg):
         logger.exception(e)
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
-        InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ​ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")            
+        InlineKeyboardButton('⌬ ᧁꪮꪮᧁꪶꫀ ⌬', url=f'https://google.com/search?q={reqst_gle}'),
+        InlineKeyboardButton('✽ 𝓲ꪑᦔ᥇ ✽', url=f'https://www.imdb.com/find/?q={reqst_gle}&ref_=nv_sr_sm')
         ]]
-        if NO_RESULTS_MSG:
-            await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-  
         k = await msg.reply_photo(
             photo=SPELL_IMG, 
-            caption=script.I_CUDNT.format(mv_rqst),
+            caption=script.SPEL_CHK.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(10)
+        await asyncio.sleep(35)
         await msg.delete()
         await k.delete()      
         return
@@ -1037,32 +1034,31 @@ async def advantage_spell_chok(client, msg):
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
-        InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ​ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")   
+        InlineKeyboardButton('⌬ ᧁꪮꪮᧁꪶꫀ ⌬', url=f'https://google.com/search?q={reqst_gle}'),
+        InlineKeyboardButton('✽ 𝓲ꪑᦔ᥇ ✽', url=f'https://www.imdb.com/find/?q={reqst_gle}&ref_=nv_sr_sm')
         ]]
-        if NO_RESULTS_MSG:
-            await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
         k = await msg.reply_photo(
-            photo=SPELL_IMG,
-            caption=script.I_CUDNT.format(mv_rqst),
+            photo=SPELL_IMG, 
+            caption=script.SPEL_CHK.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(10)
+        await asyncio.sleep(35)
         await msg.delete()
-        await k.delete()       
+        await k.delete()
         return
     movielist = [movie.get('title') for movie in movies]
     SPELL_CHECK[mv_id] = movielist
     btn = [
         [
             InlineKeyboardButton(
-                text=movie_name.strip(),
+                text=f"◉ {movie_name.strip()}",
                 callback_data=f"spol#{reqstr1}#{k}",
             )
         ]
         for k, movie_name in enumerate(movielist)
     ]
-    btn.append([InlineKeyboardButton(text="✘ ᴄʟᴏsᴇ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="✘ ᥴꪶꪮ𝘴ꫀ⁶ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     spell_check_del = await msg.reply_text(
         text=(script.CUDNT_FND.format(mv_rqst)),
         reply_markup=InlineKeyboardMarkup(btn),
