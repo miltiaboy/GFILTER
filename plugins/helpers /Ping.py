@@ -13,6 +13,4 @@ async def ping(_, message):
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
     await rm.edit(f"<b><i>🔥 Lɪᴠᴇ Pɪɴɢ Iꜱ {time_taken_s:.3f}</i></b>")
-    await asyncio.sleep(9)
-    await rm.delete()
-    await message.delete()
+
