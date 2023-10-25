@@ -181,7 +181,7 @@ async def advantage_spoll_choker(bot, query):
                     text=script.MVE_NT_FND,
                     reply_markup=InlineKeyboardMarkup(button)
                 ) 
-                await asyncio.sleep(45)
+                await asyncio.sleep(35)
                 await k.delete()
            
 @Client.on_callback_query()
@@ -988,16 +988,16 @@ async def auto_filter(client, msg, spoll=False):
     mention = message.from_user.mention
     grp_id = message.chat.id
     try:
-        await asyncio.sleep(190)
+        await asyncio.sleep(250)
         await message.delete(True)
         await send.delete(True)
     except Exception as e:
         logger.exception(e)
-        await asyncio.sleep(190)
+        await asyncio.sleep(250)
         await message.delete(True)
         await send.delete(True)
     sts = await client.send_message(grp_id, script.AFTER_TXT.format(mention))
-    await asyncio.sleep(6)
+    await asyncio.sleep(4)
     await sts.delete()
       
 async def advantage_spell_chok(client, msg):
@@ -1063,7 +1063,7 @@ async def advantage_spell_chok(client, msg):
         caption=(script.CUDNT_FND.format(mv_rqst)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
-    await asyncio.sleep(45)
+    await asyncio.sleep(35)
     await spell_check_del.delete()
     await msg.delete()
 
@@ -1090,7 +1090,7 @@ async def manual_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(140)
+                            await asyncio.sleep(180)
                             await kk.delete()
                             await message.delete()
                         else:
@@ -1102,7 +1102,7 @@ async def manual_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(140)
+                            await asyncio.sleep(180)
                             await grg.delete()
                             await message.delete()
                     elif btn == "[]":
@@ -1112,7 +1112,7 @@ async def manual_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(140)
+                        await asyncio.sleep(180)
                         await joelkb.delete()
                         await message.delete()
                     else:
@@ -1123,7 +1123,7 @@ async def manual_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(140)
+                        await asyncio.sleep(180)
                         await dlt.delete()
                         await message.delete()
                 except Exception as e:
@@ -1156,7 +1156,7 @@ async def global_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(140)
+                            await asyncio.sleep(180)
                             await joelkb.delete()
                             await message.delete()
                             
@@ -1169,7 +1169,7 @@ async def global_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(140)
+                            await asyncio.sleep(180)
                             await hmm.delete()
                             await message.delete()
 
@@ -1180,7 +1180,7 @@ async def global_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(140)
+                        await asyncio.sleep(180)
                         await oto.delete()
                         await message.delete()
 
@@ -1192,7 +1192,7 @@ async def global_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(140)
+                        await asyncio.sleep(180)
                         await dlt.delete()
                         await message.delete()
  
