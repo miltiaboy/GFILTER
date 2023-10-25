@@ -181,7 +181,7 @@ async def advantage_spoll_choker(bot, query):
                     text=script.MVE_NT_FND,
                     reply_markup=InlineKeyboardMarkup(button)
                 ) 
-                await asyncio.sleep(30)
+                await asyncio.sleep(45)
                 await k.delete()
            
 @Client.on_callback_query()
