@@ -157,13 +157,13 @@ Name - {}"""
 
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {}, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ"""
 
-    ALRT_TXT = """<b>• This Is Not Your Movie Request. 
+    ALRT_TXT = """• This Is Not Your Movie Request. 
     
 • Don't Click Others Results 🥴.
 
-• ροωєяє∂ ϐγ : @Team_KL</b>"""
+• ροωєяє∂ ϐγ : @Team_KL"""
     
-    OLD_ALRT_TXT = """<b>You Are Using One Of My Old Messages, Please Send The Request Again</b>"""
+    OLD_ALRT_TXT = """You Are Using One Of My Old Messages, Please Send The Request Again"""
 
     TOP_ALRT_MSG = """<b>Sᴇᴀʀᴄʜɪɴɢ Rᴇꜱᴜʟᴛꜱ. 🥴</b>"""
     
