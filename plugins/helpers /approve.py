@@ -5,7 +5,7 @@ import pytz
 import datetime
 from pyrogram import Client, filters
 from pyrogram.types import Message, User, InlineKeyboardMarkup, InlineKeyboardButton, ChatJoinRequest
-from info import CHAT_ID, TEXT, APPROVED, PICS
+from info import CHAT_ID, TEXT, APPROVED, APICS
 
 @Client.on_chat_join_request((filters.group | filters.channel) & filters.chat(CHAT_ID) if CHAT_ID else (filters.group | filters.channel))
 async def autoapprove(client, message: ChatJoinRequest):
@@ -18,7 +18,7 @@ async def autoapprove(client, message: ChatJoinRequest):
                 InlineKeyboardButton('• Jᴏɪɴ Gʀᴏᴜᴘ² •', url='https://t.me/+_B8Y75f6gGQ5MjU1')
             ]]      
     k = await client.send_photo(
-        photo=random.choice(PICS),
+        photo=random.choice(APICS),
         chat_id=message.from_user.id, 
         caption=TEXT.format(mention=user.mention, title=chat.title),
         reply_markup=InlineKeyboardMarkup(buttons)
