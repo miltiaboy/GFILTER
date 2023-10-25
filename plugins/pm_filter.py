@@ -988,16 +988,16 @@ async def auto_filter(client, msg, spoll=False):
     mention = message.from_user.mention
     grp_id = message.chat.id
     try:
-        await asyncio.sleep(150)
+        await asyncio.sleep(190)
         await message.delete(True)
         await send.delete(True)
     except Exception as e:
         logger.exception(e)
-        await asyncio.sleep(150)
+        await asyncio.sleep(190)
         await message.delete(True)
         await send.delete(True)
     sts = await client.send_message(grp_id, script.AFTER_TXT.format(mention))
-    await asyncio.sleep(7)
+    await asyncio.sleep(6)
     await sts.delete()
       
 async def advantage_spell_chok(client, msg):
@@ -1063,7 +1063,7 @@ async def advantage_spell_chok(client, msg):
         caption=(script.CUDNT_FND.format(mv_rqst)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
-    await asyncio.sleep(35)
+    await asyncio.sleep(45)
     await spell_check_del.delete()
     await msg.delete()
 
