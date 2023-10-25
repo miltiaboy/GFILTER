@@ -47,7 +47,6 @@ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ I Wɪʟʟ Gɪᴠᴇ Mᴏᴠ
 <b><u>ALERT BUTTONS:-</u></b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
 
-
     AUTOFILTER_TXT = """<b><u>AUTO FILTER NOTE:-</u></b>
 
 • ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ's ᴘʀɪᴠᴀᴛᴇ.
@@ -106,13 +105,12 @@ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ I Wɪʟʟ Gɪᴠᴇ Mᴏᴠ
  <b>᚛› 𝐆 𝐈𝐃 ⪼ @{c}
  <b>᚛› 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ {d}</b>
  <b>᚛› 𝐀𝐝𝐝𝐞𝐝 𝐁𝐲 ⪼ {e}</b>
- By {f}
- """
+ By {f}"""
 
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
-Name - {}
-"""
+Name - {}"""
+    
     FILE_MSG = """
 <b>Hai 👋 {} 😍
 
@@ -154,19 +152,18 @@ Name - {}
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
 
 📅 Dᴀᴛᴇ : <code>{}</code>
-⏰Tɪᴍᴇ : <code>{}</code>
+⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code></b>"""
 
-    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️"""
+    MELCOW_ENG = """<b>Hᴇʟʟᴏ {}, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ"""
 
-    ALRT_TXT = """⚠️ 𝖧ᴇʏ !
+    ALRT_TXT = """<b>• This Is Not Your Movie Request. 
     
-𝖲ᴇᴀʀᴄʜ 𝖸ᴏᴜʀ 𝖮ᴡɴ 𝖥ɪʟᴇ, 
-    
-𝖣ᴏɴ'ᴛ 𝖢ʟɪᴄᴋ 𝖮ᴛʜᴇʀ𝗌 𝖱ᴇ𝗌ᴜʟᴛ𝗌 😬
-"""
+• Don't Click Others Results 🥴.
 
-    OLD_ALRT_TXT = """𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧"""
+• ροωєяє∂ ϐγ : @Team_KL</b>"""
+    
+    OLD_ALRT_TXT = """<b>You Are Using One Of My Old Messages, Please Send The Request Again</b>"""
 
     TOP_ALRT_MSG = """<b>Sᴇᴀʀᴄʜɪɴɢ Rᴇꜱᴜʟᴛꜱ. 🥴</b>"""
     
@@ -177,7 +174,7 @@ Name - {}
 
     SPEL_CHK = """<b>🥺 Sorry No File Found <u>{}</u>
 
-▫️Use The Button Below To Search On <u>Google</u> Or <u>IMDB</u> And Copy The Correct Movie Name And Paste..!!
+▪️Use The Button Below To Search On <u>Google</u> Or <u>IMDB</u> And Copy The Correct Movie Name And Paste..!!
 
 ▪️Don't Ask Movies That Are Not Released In OTT Platform..!!
 
@@ -187,7 +184,7 @@ Name - {}
     
     MVE_NT_FND = """<b>This Movie Not Available 😢
 
-🤠 <u>For Reasons</u> 👀
+<u>For Reasons</u> 👀
 
 ◉) OTT Or DVD Not Released..!
 ◉) Type Name With Year..!
@@ -199,11 +196,11 @@ Name - {}
 
 ✯ Cʜᴏᴏsᴇ Tʜᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ Bᴇʟᴏᴡ 👇</b>​"""
 
-    I_CUDNT = """ʜᴇʟʟᴏ {}, ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ɪɴ ᴛʜᴀᴛ ɴᴀᴍᴇ​"""
+    I_CUDNT = """Hᴇʟʟᴏ {}, I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏ Mᴏᴠɪᴇ Iɴ Tʜᴀᴛ Nᴀᴍᴇ​"""
 
-    I_CUD_NT = """ʜᴇʟʟᴏ {}, ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ​ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ . ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ​"""    
+    I_CUD_NT = """Hᴇʟʟᴏ {}, I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏᴛʜɪɴɢ​ Rᴇʟᴀᴛᴇᴅ Tᴏ Tʜᴀᴛ. Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ​"""    
     
-    REPRT_MSG = """ Reported To Admin"""    
+    REPRT_MSG = """Reported To Admin"""    
 
     WHYJOIN = """Iғ Tʜᴇ Gʀᴏᴜᴘ Cᴏᴘʏ Rɪɢʜᴛ Iꜱ Lᴏꜱᴛ, Wʜᴇɴ A Nᴇᴡ Gʀᴏᴜᴘ Iꜱ Sᴛᴀʀᴛᴇᴅ, Iᴛ Wɪʟʟ Bᴇ Nᴏᴛɪғɪᴇᴅ Oɴ Tʜɪꜱ Cʜᴀɴɴᴇʟ 🤥
 
@@ -249,7 +246,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
 ◈ ροωєяє∂ ϐγ :- @Team_KL</i></b>"""
 
-    AFTER_TXT = """<b>Hᴇʏ Tʜᴇʀᴇ 👋, {} Yᴏᴜʀ Lᴀsᴛ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Hᴀs Bᴇᴇɴ Dᴇʟᴇᴛᴇᴅ 🛑 Bᴇᴄᴀᴜsᴇ Oғ Cᴏᴘʏʀɪɢʜᴛ Issᴜᴇs...
-    
-    Kɪɴᴅʟʏ Rᴇᴏ̨ᴜᴇsᴛ Aɢᴀɪɴ Fᴏʀ Yᴏᴜʀ Fɪʟᴇs.☺️</b>"""
+    AFTER_TXT = """<b><i>🙋🏻‍♀ Hey, {} Your Last Movies Request Has Been Deleted Because Of Copyright Issues..!
+
+Kindly Request Again For Your Files.☺️</i></b>"""
     
