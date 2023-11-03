@@ -996,9 +996,6 @@ async def auto_filter(client, msg, spoll=False):
         await asyncio.sleep(250)
         await message.delete(True)
         await send.delete(True)
-    sts = await client.send_message(grp_id, script.AFTER_TXT.format(mention))
-    await asyncio.sleep(4)
-    await sts.delete()
       
 async def advantage_spell_chok(client, msg):
     mv_id = msg.id
