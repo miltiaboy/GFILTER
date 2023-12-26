@@ -47,16 +47,14 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-        buttons = [[            
-            InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[            
+        buttons = [[                        
             InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', callback_data="owner_info")            
+            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', callback_data="owner_info")            
             ],[      
-            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🔮 ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🎭 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('• Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs •', callback_data="group_info")
+            InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')            
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
@@ -82,13 +80,13 @@ async def start(client, message):
             await ForceSub(client, message)
             return
         buttons = [[            
-            InlineKeyboardButton('• Bᴏᴛ Oᴡɴᴇʀ •', callback_data="owner_info"),
-            InlineKeyboardButton('• Sᴇᴀʀᴄʜ •', switch_inline_query_current_chat='')            
+            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', callback_data="owner_info")            
             ],[      
-            InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
-            InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about')
+            InlineKeyboardButton('🔮 ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🎭 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('• Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs •', callback_data="group_info")
+            InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')            
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -260,8 +258,8 @@ async def start(client, message):
             ]
         )
     )
-    k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.\n\n 10 മിനിറ്റിനുള്ളിൽ ഈ ഫയൽ ഇവിടെ നിന്ന് ഇല്ലാതാക്കപ്പെടും ദയവായി ഈ ഫയൽ നിങ്ങളുടെ Saved Messages  ഫോർവേഡ് ചെയ്ത് അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക.</b>",quote=True)
-    await asyncio.sleep(60)
+    k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.\n\n10 മിനിറ്റിനുള്ളിൽ ഈ ഫയൽ ഇവിടെ നിന്ന് ഇല്ലാതാക്കപ്പെടും ദയവായി ഈ ഫയൽ നിങ്ങളുടെ <u>Saved Messages</u> ഫോർവേഡ് ചെയ്ത് അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക.</b>",quote=True)
+    await asyncio.sleep(100)
     await msg.delete()
     await k.delete()
     await message.delete()
