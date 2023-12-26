@@ -62,13 +62,13 @@ async def start(client, message):
         T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
         Time = T.hour        
         if Time < 12:
-            afsu="Gᴏᴏᴅ Mᴏʀɴɪɴɢ" 
+            afsu="ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ" 
         elif Time < 15:
-            afsu="Gᴏᴏᴅ AғᴛᴇʀNᴏᴏɴ" 
+            afsu="ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ" 
         elif Time < 20:
-            afsu="Gᴏᴏᴅ Eᴠᴇɴɪɴɢ"
+            afsu="ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ"
         else:
-            afsu="Gᴏᴏᴅ Nɪɢʜᴛ"    
+            afsu="ɢᴏᴏᴅ ɴɪɢʜᴛ"    
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(afsu, message.from_user.mention, temp.U_NAME, temp.B_NAME),
