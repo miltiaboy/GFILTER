@@ -67,9 +67,6 @@ async def start(client, message):
             afsu="Gᴏᴏᴅ Eᴠᴇɴɪɴɢ"
         else:
             afsu="Gᴏᴏᴅ Nɪɢʜᴛ"    
-        m=await message.reply_sticker("CAACAgIAAxkBAAE5teNk03mdcUwZgk5r0t7O_axeVvG_-wACJAwAAviQOEiWAywHzwABlxgeBA") 
-        await asyncio.sleep(2)
-        await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(afsu, message.from_user.mention, temp.U_NAME, temp.B_NAME),
