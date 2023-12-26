@@ -556,13 +556,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
         Time = T.hour        
         if Time < 12:
-            afsu="Gᴏᴏᴅ Mᴏʀɴɪɴɢ" 
+            afsu="ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ" 
         elif Time < 15:
-            afsu="Gᴏᴏᴅ AғᴛᴇʀNᴏᴏɴ" 
+            afsu="ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ" 
         elif Time < 20:
-            afsu="Gᴏᴏᴅ Eᴠᴇɴɪɴɢ"
+            afsu="ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ"
         else:
-            afsu="Gᴏᴏᴅ Nɪɢʜᴛ"
+            afsu="ɢᴏᴏᴅ ɴɪɢʜᴛ"
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -580,6 +580,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('• Cᴏɴɴᴇᴄᴛɪᴏɴꜱ •', callback_data='coct'),
             InlineKeyboardButton('• Exᴛʀᴀ Mᴏᴅꜱ •', callback_data='extra')                        
+        ], [
+            InlineKeyboardButton('• Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs •', callback_data="group_info"),
+            InlineKeyboardButton('• Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs •', callback_data="group_info")
         ], [
             InlineKeyboardButton('⇍ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ⇏', callback_data='start')            
         ]]
