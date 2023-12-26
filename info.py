@@ -87,11 +87,11 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 # Others
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
-MAX_BTN = int(environ.get('MAX_BTN', "5"))
+MAX_BTN = int(environ.get('MAX_BTN', "7"))
 S_GROUP = environ.get('S_GROUP',"https://t.me/KLMovieGroup")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/Team_Kl")
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+3KoYTVVtz_FlNTU1")
-MSG_ALRT = environ.get('MSG_ALRT', '⏤͟͟͞ ♡ Nᴀɴᴄʏ ᵛ³·⁰')
+MSG_ALRT = environ.get('MSG_ALRT', '⏤͟͟͞ ♡ Nᴀɴᴄʏ ᵛ³')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 'None'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Team_KL')
