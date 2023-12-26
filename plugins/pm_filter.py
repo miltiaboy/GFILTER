@@ -487,7 +487,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]
             )
         ) 
-        k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.\n\n 10 മിനിറ്റിനുള്ളിൽ ഈ ഫയൽ ഇവിടെ നിന്ന് ഇല്ലാതാക്കപ്പെടും ദയവായി ഈ ഫയൽ നിങ്ങളുടെ Saved Messages  ഫോർവേഡ് ചെയ്ത് അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക.</b>",quote=True)
+        k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.\n\n10 മിനിറ്റിനുള്ളിൽ ഈ ഫയൽ ഇവിടെ നിന്ന് ഇല്ലാതാക്കപ്പെടും ദയവായി ഈ ഫയൽ നിങ്ങളുടെ <u>Saved Messages</u> ഫോർവേഡ് ചെയ്ത് അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക.</b>",quote=True)
         await asyncio.sleep(60)
         await msg.delete()
         await k.delete()        
@@ -544,13 +544,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('• Bᴏᴛ Oᴡɴᴇʀ •', callback_data="owner_info"),
-            InlineKeyboardButton('• Sᴇᴀʀᴄʜ •', switch_inline_query_current_chat='')            
+            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🧑‍💻 ᴏᴡɴᴇʀ', callback_data="owner_info")            
             ],[      
-            InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
-            InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about')
+            InlineKeyboardButton('🔮 ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🎭 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('• Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs •', callback_data="group_info")
+            InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')            
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         T = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
@@ -748,16 +748,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "group_info":
         buttons = [[
-            InlineKeyboardButton("⟁ Sᴜʙsᴄʀɪʙᴇ Yᴏᴜᴛᴜʙᴇ Cʜᴀɴɴᴇʟ ⟁", url="https://youtube.com/shorts/v66wWBXzVYY?si=s5hpGq5p1jCFe6fR")         
-                  ],[
             InlineKeyboardButton("• Tᴇᴀᴍ Kʟ Mᴀɪɴ Cʜᴀɴɴᴇʟ •", url="t.me/team_kl")
                   ],[
             InlineKeyboardButton("• Gʀᴏᴜᴘ 1 •", url="https://t.me/KLMovieGroup"),
             InlineKeyboardButton("• Gʀᴏᴜᴘ 2 •", url="https://t.me/KL_Group2")
                   ],[           
             InlineKeyboardButton("• കേരള റോക്കേഴ്സ് [Nᴇᴡ Gʀᴏᴜᴘ] •", url="https://t.me/+3sc743KKHWoxZDY1")
-                  ],[
-            InlineKeyboardButton("• Pʀᴇᴍɪᴜᴍ Lᴏɢᴏ Pʀᴏ •", url="https://t.me/PremiumLogoPro")
                   ],[
             InlineKeyboardButton("⇍ Bᴀᴄᴋ Tᴏ Hᴏᴍᴇ ⇏", callback_data="start")
         ]]   
