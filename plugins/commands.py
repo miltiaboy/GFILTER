@@ -28,7 +28,7 @@ async def start(client, message):
                     InlineKeyboardButton("• Gʀᴏᴜᴘ 𝟷 •", url="t.me/KLMovieGroup"),
                     InlineKeyboardButton("• ​Gʀᴏᴜᴘ 𝟸 •", url="t.me/KL_Group2")
                   ],[
-                    InlineKeyboardButton('• Fᴏʀ Mᴏʀᴇ Mᴏᴠɪᴇs Uᴘᴅᴀᴛᴇs •', url='t.me/Team_KL')
+                    InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ғᴏʀ ʜᴇʟᴘ•', url='t.me/Oru_adaar_Robot?start=help')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         kd = await message.reply_photo(
@@ -48,11 +48,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[            
-            InlineKeyboardButton('• Bᴏᴛ Oᴡɴᴇʀ •', callback_data="owner_info"),
-            InlineKeyboardButton('• Sᴇᴀʀᴄʜ •', switch_inline_query_current_chat='')            
+            InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[            
+            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', callback_data="owner_info")            
             ],[      
-            InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
-            InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about')
+            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
             InlineKeyboardButton('• Tᴇᴀᴍ Kʟ Oꜰꜰɪᴄɪᴀʟ Lɪɴᴋs •', callback_data="group_info")
         ]]   
