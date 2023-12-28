@@ -19,12 +19,9 @@ class script(object):
 ◆ ʙᴏᴛ sᴇʀᴠᴇʀ: <a href='tg://settings'>ᴘʀɪᴠᴀᴛᴇ</a>
 ◆ ʙᴜɪʟᴅ sᴛᴀᴛᴜs: v4.5 [ sᴛᴀʙʟᴇ ]</b>"""
     
-    SOURCE_TXT = """<b>
-◆ Tʜɪꜱ Bᴏᴛ Iꜱ Nᴏᴛ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ
+    SOURCE_TXT = """<b>ᴛʜɪꜱ ɴᴏᴛ ᴀɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
 
-◆ Tʜɪꜱ Bᴏᴛ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ ~ <u>Pʀɪᴠᴀᴛᴇ</u> 
-
-◆ Pᴜʙʟɪᴄ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href='https://github.com/Joelkb/DQ-The-File-Donor'>Cʟɪᴄᴋ Hᴇʀᴇ</a></b>"""
+»sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ~ ᴘʀɪᴠᴀᴛᴇ 🤒</b>"""
 
     MANUELFILTER_TXT = """<b><u>FILTERS COMMANDS</u></b>
 
