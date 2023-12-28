@@ -25,8 +25,8 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[                   
-                    InlineKeyboardButton("• Gʀᴏᴜᴘ 𝟷 •", url="t.me/KLMovieGroup"),
-                    InlineKeyboardButton("• ​Gʀᴏᴜᴘ 𝟸 •", url="t.me/KL_Group2")
+                    InlineKeyboardButton("• ɢʀᴏᴜᴘ 𝟷 •", url="t.me/KLMovieGroup"),
+                    InlineKeyboardButton("• ​ɢʀᴏᴜᴘ 𝟸 •", url="t.me/KL_Group2")
                   ],[
                     InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ғᴏʀ ʜᴇʟᴘ•', url='t.me/Oru_adaar_Robot?start=help')
                   ]]
@@ -244,7 +244,7 @@ async def start(client, message):
             logger.exception(e)
             f_caption=f_caption
     if f_caption is None:
-        f_caption = f"@Team_KL {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"        
+        f_caption = f"@Team_KL ~ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"        
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
