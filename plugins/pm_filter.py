@@ -529,7 +529,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(f"✯ താഴെയുള്ള ബട്ടണിൽ വേണ്ട ക്വാളിറ്റി യിൽ ക്ലിക്ക് ചെയ്താൽ കിട്ടും⚡\n\n✯ 𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝗍𝗁𝖾 𝗙𝗶𝗹𝗲 𝗡𝗮𝗺𝗲 𝖻𝖾𝗅𝗈𝗐 𝖻𝗎𝗍𝗍𝗈𝗇 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖡𝗈𝗍 🎯 \n\n➠ © @Team_KL",show_alert=True)
         
     elif query.data == "reqinfo":
-        await query.answer("✯ Movies - Jailer 2023\n✯ Series - Dark S01E01\n\n✯ Correct Spelling in English Letters Only And ❌ Don't Use Stylish Font\n\n✯ Not Available Theater Print Files !\n\n ➠ © @Team_KL", show_alert=True)        
+        await query.answer("✯ Movies - Jailer 2023 Tamil\n✯ Series - Dark S01E01\n\n✯ Correct Spelling in English Letters Only And ❌ Don't Use Stylish Font\n\n✯ Not Available Theater Print Files !\n\n ➠ © @Team_KL", show_alert=True)        
             
     elif query.data == "statx":
         currentTime = time.strftime("%Hh%Mm%Ss", time.gmtime(time.time() - BOT_START_TIME))
@@ -755,7 +755,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   ],[           
             InlineKeyboardButton("• കേരള റോക്കേഴ്സ് [Nᴇᴡ Gʀᴏᴜᴘ] •", url="https://t.me/+3sc743KKHWoxZDY1")
                   ],[
-            InlineKeyboardButton("⇍ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇏", callback_data="start")
+            InlineKeyboardButton("⇍ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇏", callback_data="about")
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1010,7 +1010,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>❐ Here is What I Found In My Database For Your Query : {search}</b>"
+        cap = f"<b>❐ Here is What I Found In My Database For Your Query : <u>{search}</u></b>"
     if imdb and imdb.get('poster'):
         try:
             send=await message.reply_photo(photo="https://telegra.ph/file/60d2e897bfdf063f81545.jpg", caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
