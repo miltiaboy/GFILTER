@@ -93,7 +93,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"★ {get_size(file.file_size)} ⊳ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'files#{file.file_id}'
+                    text=f"➲ {get_size(file.file_size)} ⊳ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'files#{file.file_id}'
                 ),                    
             ]
             for file in files
@@ -472,7 +472,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 logger.exception(e)
                 f_caption = f_caption
         if f_caption is None:
-            f_caption = f"@Team_KL {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"                
+            f_caption = f"@Team_KL ~ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"                
         await query.answer()
         msg = await client.send_cached_media(
             chat_id=query.from_user.id,
@@ -926,7 +926,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"★ {get_size(file.file_size)} ⊳ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"➲ {get_size(file.file_size)} ⊳ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1040,8 +1040,8 @@ async def advantage_spell_chok(client, msg):
         logger.exception(e)
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
-        InlineKeyboardButton('⌬ ᧁꪮꪮᧁꪶꫀ ⌬', url=f'https://google.com/search?q={reqst_gle}'),
-        InlineKeyboardButton('✽ 𝓲ꪑᦔ᥇ ✽', url=f'https://www.imdb.com/find/?q={reqst_gle}&ref_=nv_sr_sm')
+        InlineKeyboardButton('▷ ɢᴏᴏɢʟᴇ ◁', url=f'https://google.com/search?q={reqst_gle}'),
+        InlineKeyboardButton('▷ ɪᴍᴅʙ ◁', url=f'https://www.imdb.com/find/?q={reqst_gle}&ref_=nv_sr_sm')
         ]]
         k = await msg.reply_photo(
             photo=SPELL_IMG, 
@@ -1057,8 +1057,8 @@ async def advantage_spell_chok(client, msg):
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
-        InlineKeyboardButton('⌬ ᧁꪮꪮᧁꪶꫀ ⌬', url=f'https://google.com/search?q={reqst_gle}'),
-        InlineKeyboardButton('✽ 𝓲ꪑᦔ᥇ ✽', url=f'https://www.imdb.com/find/?q={reqst_gle}&ref_=nv_sr_sm')
+        InlineKeyboardButton('▷ ɢᴏᴏɢʟᴇ ◁', url=f'https://google.com/search?q={reqst_gle}'),
+        InlineKeyboardButton('▷ ɪᴍᴅʙ ◁', url=f'https://www.imdb.com/find/?q={reqst_gle}&ref_=nv_sr_sm')
         ]]
         k = await msg.reply_photo(
             photo=SPELL_IMG, 
