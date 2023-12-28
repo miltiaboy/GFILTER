@@ -998,7 +998,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>┏⍞ Tɪᴛɪʟᴇ : {search}\n┣❐ Asᴋᴇᴅ Bʏ : {message.from_user.mention}\n┣⎙ Fɪʟᴇs : [{total_results}](tg://need_update_for_some_feature)\n┗〄 Pᴏᴡᴇʀᴇᴅ Bʏ : [kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs](https://t.me/Team_KL)</b>"
+        cap = f"<b>❐ Here is What I Found In My Database For Your Query : {search}</b>"
     if imdb and imdb.get('poster'):
         try:
             send=await message.reply_photo(photo="https://telegra.ph/file/60d2e897bfdf063f81545.jpg", caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
@@ -1081,7 +1081,7 @@ async def advantage_spell_chok(client, msg):
         ]
         for k, movie_name in enumerate(movielist)
     ]
-    btn.append([InlineKeyboardButton(text="✘ ᥴꪶꪮ𝘴ꫀ⁶ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="✘ ᴄʟᴏsᴇ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SNO_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),
