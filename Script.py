@@ -11,13 +11,13 @@ class script(object):
 
     HELPER_TXT = """<b>ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
     
-    ABOUT_TXT = """<b>◆ Mʏ Nᴀᴍᴇ : <a href='https://t.me/Oru_adaar_Robot'>♡ Nᴀɴᴄʏ ᵛ³·⁰</a>
-◆ Dᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/Hacker_Jr'>HᴀᴄKᴇʀ Jʀ 〆⁪⁬⁮⁮⁮</a>
-◆ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʀᴏɢʀᴀᴍ</a>
-◆ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/'>Pʏᴛʜᴏɴ 3</a>
-◆ Dᴀᴛᴀ Bᴀsᴇ: <a href='https://cloud.mongodb.com/'>Mᴏɴɢᴏ Dʙ</a>
-◆ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='tg://need_update_for_some_feature'>Aɴʏᴡʜᴇʀᴇ</a>
-◆ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v4.5.0 [ Sᴛᴀʙʟᴇ ]</b>"""
+    ABOUT_TXT = """<b>◆ ᴍʏ ɴᴀᴍᴇ : <a href='https://t.me/Oru_adaar_Robot'>♡ Nᴀɴᴄʏ ᵛ³</a>
+◆ ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/Hacker_Jr'>HᴀᴄKᴇʀ Jʀ 〆⁪⁬⁮⁮⁮</a>
+◆ ʟɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>ᴘʀᴏɢʀᴀᴍ</a>
+◆ ʟᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/'>ᴘʏᴛʜᴏɴ 𝟹</a>
+◆ ᴅᴀᴛᴀ ʙᴀsᴇ: <a href='https://cloud.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a>
+◆ ʙᴏᴛ sᴇʀᴠᴇʀ: <a href='tg://settings'>ᴘʀɪᴠᴀᴛᴇ</a>
+◆ ʙᴜɪʟᴅ sᴛᴀᴛᴜs: v4.5 [ sᴛᴀʙʟᴇ ]</b>"""
     
     SOURCE_TXT = """<b>
 ◆ Tʜɪꜱ Bᴏᴛ Iꜱ Nᴏᴛ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ
