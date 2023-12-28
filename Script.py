@@ -154,13 +154,11 @@ Name - {}"""
 
     ALRT_TXT = """• This Is Not Your Movie Request. 
     
-• Don't Click Others Results 🥴.
-
-• ροωєяє∂ ϐγ : @Team_KL"""
+• Don't Click Others Results 🥴."""
     
     OLD_ALRT_TXT = """You Are Using One Of My Old Messages, Please Send The Request Again"""
 
-    TOP_ALRT_MSG = """<b>Sᴇᴀʀᴄʜɪɴɢ Rᴇꜱᴜʟᴛꜱ. 🥴</b>"""
+    TOP_ALRT_MSG = """<b>𝕊𝕖𝕒𝕣𝕔𝕙𝕚𝕟𝕘 ℝ𝕖𝕤𝕦𝕝𝕥𝕤 🥴</b>"""
     
     NORSLTS = """★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
 𝗜𝗗 <b>: {}</b>
@@ -185,7 +183,7 @@ Name - {}"""
 ◉) Type Name With Year..!
 ◉) check your correct spelling..!
 ◉) Movie Is Not Available in My Database..!
-◉) Not Available Theater Print 🥴..!</b>"""
+◉) Don't Ask Theater Print 🥴..!</b>"""
 
     CUDNT_FND = """<b>✯ Nᴏ Mᴏᴠɪᴇ Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ <u>{}</u>
 
