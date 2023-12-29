@@ -87,13 +87,11 @@ class script(object):
 • /setskip - <code>Skip no of files before indexing</code>
 • /send - <code>Send any message through bot to users. /send (username/userid) reply with message </code>"""
 
-    STATUS_TXT = """<b>⍟───[ Sᴛᴀᴛᴜs Dᴇᴛᴀɪʟꜱ ]───⍟
-    
-⎇ Fɪʟᴇs Sᴀᴠᴇᴅ: <code>{}</code>
-⎇ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
-⎇ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
-⎇ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code> Mɪʙ
-⎇ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code> Mɪʙ</b>"""   
+    STATUS_TXT = """<b>◉ ᴛᴏᴛᴀʟ ғɪʟᴇs : <code>{}</code>
+◉ ᴛᴏᴛᴀʟ ᴜsᴇʀs : <code>{}</code>
+◉ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : <code>{}</code>
+◉ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : <code>{}</code>
+◉ ғʀᴇᴇ sᴛᴏʀᴀɢᴇ : <code>{}</code></b>"""   
     
     LOG_TEXT_G = """#NewUser
  <b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}(<code>{b}</code>)</b>
@@ -185,9 +183,9 @@ Name - {}"""
 ◉) Movie Is Not Available in My Database..!
 ◉) Don't Ask Theater Print 🥴..!</b>"""
 
-    CUDNT_FND = """<b>✯ Nᴏ Mᴏᴠɪᴇ Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ <u>{}</u>
+    CUDNT_FND = """<b>➠ No Movie Found For Your Query <u>{}</u>
 
-✯ Cʜᴏᴏsᴇ Tʜᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ Bᴇʟᴏᴡ 👇</b>​"""
+➠ Choose The Correct Movie Name Below 👇</b>​"""
 
     I_CUDNT = """Hᴇʟʟᴏ {}, I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏ Mᴏᴠɪᴇ Iɴ Tʜᴀᴛ Nᴀᴍᴇ​"""
 
