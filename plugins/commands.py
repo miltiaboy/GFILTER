@@ -234,7 +234,7 @@ async def start(client, message):
             pass
         return await message.reply('No such file exist.')
     files = files_[0]
-    title = '@Team_KL ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
+    title = '@Team_KL ~ ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
     size=get_size(files.file_size)
     f_caption=files.caption
     if CUSTOM_FILE_CAPTION:
@@ -258,7 +258,7 @@ async def start(client, message):
             ]
         )
     )
-    k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.\n\n10 മിനിറ്റിനുള്ളിൽ ഈ ഫയൽ ഇവിടെ നിന്ന് ഇല്ലാതാക്കപ്പെടും ദയവായി ഈ ഫയൽ നിങ്ങളുടെ <u>Saved Messages</u> ഫോർവേഡ് ചെയ്ത് അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക.</b>",quote=True)
+    k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.</b>\n\n10 മിനിറ്റിനുള്ളിൽ ഈ ഫയൽ ഇവിടെ നിന്ന് ഇല്ലാതാക്കപ്പെടും ദയവായി ഈ ഫയൽ നിങ്ങളുടെ <u>Saved Messages</u> ഫോർവേഡ് ചെയ്ത് അവിടെ നിന്ന് ഡൗൺലോഡ് ചെയ്യാൻ ആരംഭിക്കുക.",quote=True)
     await asyncio.sleep(100)
     await msg.delete()
     await k.delete()
