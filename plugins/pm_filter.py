@@ -132,7 +132,7 @@ async def next_page(bot, query):
         )
     elif off_set is None:
         btn.append(          
-            [InlineKeyboardButton("ᴘᴀɢᴇ ", callback_data="pages"),
+            [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"),
              InlineKeyboardButton(f"{math.ceil(int(offset) / 10) + 1} - {math.ceil(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("ɴᴇxᴛ​ ​⇛", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
@@ -975,7 +975,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="-ˋˏ✄┈┈ 1-1 ┈┈", callback_data="pages")]
+            [InlineKeyboardButton(text="-ˋˏ✄┈ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ᴀᴠᴀɪʟᴀʙʟᴇ┈", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
