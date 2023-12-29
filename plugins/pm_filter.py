@@ -541,7 +541,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         cpu_usage = psutil.cpu_percent()
         ram_usage = psutil.virtual_memory().percent
         disk_usage = psutil.disk_usage('/').percent
-        await query.answer(f"⚡️ Sʏsᴛᴇᴍ Sᴛᴀᴛᴜs ⚡️\n\n❂ Uᴘᴛɪᴍᴇ : {currentTime}\n✇ Cᴘᴜ : {cpu_usage}\n✪ Rᴀᴍ : {ram_usage}\n✼ Tᴏᴛᴀʟ Dɪsᴋ : {total}\n❐ Usᴇᴅ Sᴘᴀᴄᴇ : {used} ({disk_usage}%)\n❦ Fʀᴇᴇ Sᴘᴀᴄᴇ : {free}\n\nᴠ2.9.1 [sᴛᴀʙʟᴇ]", show_alert=True)
+        await query.answer(f"⚡️ Sʏsᴛᴇᴍ Sᴛᴀᴛᴜs ⚡️\n\n❂ Uᴘᴛɪᴍᴇ : {currentTime}\n✇ Cᴘᴜ : {cpu_usage}\n✪ Rᴀᴍ : {ram_usage}\n✼ Tᴏᴛᴀʟ Dɪsᴋ : {total}\n❐ Usᴇᴅ Sᴘᴀᴄᴇ : {used} ({disk_usage}%)\n❦ Fʀᴇᴇ Sᴘᴀᴄᴇ : {free}", show_alert=True)
     
     elif query.data == "start":
         buttons = [[
