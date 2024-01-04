@@ -94,15 +94,13 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
     except UserNotParticipant:
         text="""** ❗ READ THIS INSTRUCTION ❗
 
-• നിങ്ങൾ ചോദിക്കുന്ന സിനിമകൾ നിങ്ങൾക്ക് ലഭിക്കണം എന്നുണ്ടെങ്കിൽ നിങ്ങൾ ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്തിരിക്കണം. ജോയിൻ ചെയ്യാൻ Request To Join Channel എന്ന ബട്ടണിലോ താഴെ കാണുന്ന ലിങ്കിലോ ക്ലിക്ക് ചെയ്യാവുന്നതാണ്. Request To Join channel ക്ലിക്ക് ചെയ്ത ശേഷം Try Again എന്ന ബട്ടണിൽ അമർത്തിയാൽ നിങ്ങൾക്ക് ഞാൻ ആ സിനിമ അയച്ചു തരുന്നതാണ്..
-
 • In Order To Get The Movie Requested By You in Our Group, You Must Have To Join Our Official Channel First By Clicking Request To Join Channel Button Or The Link Shown Below. After That, Click Try Again Button. I'll Send You That Movie 
 
 👇 CLICK REQUEST TO JOIN CHANNEL & CLICK TRY AGAIN 👇**"""
 
         buttons = [
             [
-                InlineKeyboardButton("🧩 Rᴇǫᴜᴇsᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ 🧩", url=invite_link)
+                InlineKeyboardButton("🔮 Rᴇǫᴜᴇsᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ 🔮", url=invite_link)
             ],
             [
                 InlineKeyboardButton(" 🔄 Tʀʏ Aɢᴀɪɴ 🔄 ", callback_data=f"{mode}#{file_id}")
