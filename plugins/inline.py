@@ -103,9 +103,9 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('• 𝘴ꫀꪖ𝘳ᥴꫝ ꪖᧁꪖ𝓲ꪀ •', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('◤ sᴇᴀʀᴄʜ ᴍᴏʀᴇ ◢ ', switch_inline_query_current_chat=query)
         ],[
-            InlineKeyboardButton("• ꪑꪮꪜ𝓲ꫀ 𝘳ꫀ𝘲ꪊꫀ𝘴𝓽 ᧁ𝘳ꪮꪊρ •", url="https://t.me/+3sc743KKHWoxZDY1")
+            InlineKeyboardButton("◤ ᴍᴏᴠɪᴇs ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ ◢", url="https://t.me/+3sc743KKHWoxZDY1")
         ]
         ]
     return InlineKeyboardMarkup(buttons)
