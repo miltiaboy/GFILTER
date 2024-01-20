@@ -1,6 +1,5 @@
 class script(object):
-    START_TXT = """<b>{} {},
-    
+    START_TXT = """<b>{} {},    
 ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ.</b>"""
 
     STARTER_TXT = """<b>{} 
@@ -138,8 +137,8 @@ Name - {}"""
 
 ▷ ғɪʟᴇ sɪᴢᴇ : {file_size}
 
-▷ @Team_KL
-▷ @KLMovieGroup</b>"""    
+★ @Team_KR
+★ @KLMovieGroup</b>"""    
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
