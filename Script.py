@@ -197,11 +197,12 @@ Name - {}"""
 © @Team_KL"""
 
     OWNER_INFO = """
-<b>⍟───[ Oᴡɴᴇʀ Dᴇᴛᴀɪʟꜱ ]───⍟
+<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
-• Fᴜʟʟ Nᴀᴍᴇ : • HᴀᴄKᴇʀ Jʀ ~ 🕊 
-• Uꜱᴇʀɴᴀᴍᴇ : @Hacker_Jr
-• Lᴏɢᴏ Mᴀᴋᴇʀ : <a href='t.me/PremiumlogoPro'>Pʀᴇᴍɪᴜᴍ Lᴏɢᴏ Pʀᴏ</a></b>"""
+ ‣ ꜰᴜʟʟ ɴᴀᴍᴇ : • HᴀᴄKᴇʀ Jʀ ~ 🕊 
+ ‣ ᴜꜱᴇʀɴᴀᴍᴇ : @Hacker_Jr
+ ‣ ᴄᴏᴜɴᴛʀʏ : ɪɴᴅɪᴀ 🇮🇳
+ ‣ ʟᴏɢᴏ ᴍᴀᴋᴇʀ : <a href='t.me/PremiumlogoPro'>ᴘʀᴇᴍɪᴜᴍ ʟᴏɢᴏ ᴘʀᴏ</a></b>"""
 
     GROUP_INFO = """
 <b>⍟ Wᴇʟᴄᴏᴍᴇ Tᴏ Tᴇᴀᴍ Kʟ Lɪɴᴋs ⍟</b>"""
