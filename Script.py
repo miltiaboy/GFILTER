@@ -172,7 +172,7 @@ Name - {}"""
 
 🚯 Don't Use: ➠ ':(!,./) 🙅‍♂</b>"""
     
-    MVE_NT_FND = """<b><u>This Movie Not Available For Reason 👇</u>
+    MVE_NT_FND = """<b><u>🎞 This Movie Not Available For Reason 👇</u>
  
 ◉) OTT Or DVD Not Released..!
 ◉) Type Name With Year..!
