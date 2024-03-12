@@ -1038,6 +1038,7 @@ async def auto_filter(client, msg, spoll=False):
             await message.react(emoji=random.choice(REACTIONS))
             send=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
+        await message.react(emoji=random.choice(REACTIONS))
         send=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll: await msg.message.delete()
     mention = message.from_user.mention
