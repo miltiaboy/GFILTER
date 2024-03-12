@@ -15,7 +15,7 @@ from utils import humanbytes
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
-from info import ADMINS, AUTH_CHANNEL, FILE_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, NOR_IMG, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
+from info import ADMINS, AUTH_CHANNEL, FILE_CHANNEL, REACTIONS, AUTH_USERS, CUSTOM_FILE_CAPTION, NOR_IMG, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
     SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, SPELL_IMG, MSG_ALRT, SNO_IMG, FILE_FORWARD, MAIN_CHANNEL, PICS, LOG_CHANNEL, REQ_CHANNEL
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto
 from pyrogram import Client, filters, enums
@@ -1026,13 +1026,16 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>❐ Here is What I Found In My Database For Your Query : <u>{search}</u></b>"
     if imdb and imdb.get('poster'):
         try:
+            await message.react(emoji=random.choice(REACTIONS))
             send=await message.reply_photo(photo="https://telegra.ph/file/60d2e897bfdf063f81545.jpg", caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
+            await message.react(emoji=random.choice(REACTIONS))
             send=await message.reply_photo(photo="https://telegra.ph/file/60d2e897bfdf063f81545.jpg", caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
+            await message.react(emoji=random.choice(REACTIONS))
             send=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
         send=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
