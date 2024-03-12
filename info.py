@@ -60,6 +60,7 @@ SNO_IMG = environ.get('SNO_IMG',"https://telegra.ph/file/aae41482507312961e5d8.j
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001950095127').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", f"{script.APPROVED_TEXT}")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
+REACTIONS = ["❤️‍🔥", "⚡", "🔥", "🥰", "🤡", "🤩"]
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', 'None').split()]
