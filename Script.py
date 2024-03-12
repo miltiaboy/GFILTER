@@ -178,9 +178,9 @@ Name - {}"""
 ◉) Type Name With Year..!
 ◉) Check Your Correct Spelling..!
 ◉) Movie Is Not Available in My Database..!
-👉 Report To Admin @KLAdmin1Bot
+👉 Report To Admin @KLAdmin1Bot</b>
 
-```❌ Don't Ask Theater Print 🥴..!```</b>"""
+```❌ Don't Ask Theater Print 🥴..!```"""
 
     CUDNT_FND = """<b>➠ No Movie Found For Your Query <u>{}</u>
 
