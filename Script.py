@@ -137,8 +137,7 @@ Name - {}"""
 
 ▷ ғɪʟᴇ sɪᴢᴇ : {file_size}
 
-★ @Team_KR
-★ @KLMovieGroup</b>"""    
+‣ @KLxFiles ‣ @KLMovieGroup</b>"""    
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
@@ -149,8 +148,7 @@ Name - {}"""
 
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {}, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ"""
 
-    ALRT_TXT = """• This Is Not Your Movie Request. 
-    
+    ALRT_TXT = """• This Is Not Your Movie Request.     
 • Don't Click Others Results 🥴."""
     
     OLD_ALRT_TXT = """You Are Using One Of My Old Messages, Please Send The Request Again"""
