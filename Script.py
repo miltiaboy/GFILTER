@@ -176,7 +176,7 @@ Name - {}"""
 ◉) OTT Or DVD Not Released..!
 ◉) Type Name With Year..!
 ◉) Check Your Correct Spelling..!
-◉) Movie Is Not Available in My Database.. Report To Admin @KLAdmin1Bot
+◉) Movie Is Not Available in My Database.. Report To Admin @KLAdmin1Bot</b>
 
 ```
 ❌ Don't Ask Theater Print 🥴..!```
