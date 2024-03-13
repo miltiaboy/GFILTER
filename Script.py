@@ -133,11 +133,12 @@ Name - {}"""
 
 ★ ροωєяє∂ ϐγ : @Team_KL</b>"""
    
-    CUSTOM_FILE_CAPTION = """<b>▷ ғɪʟᴇ ɴᴀᴍᴇ : {file_name}
+    CUSTOM_FILE_CAPTION = """<b>⍟ ғɪʟᴇ ɴᴀᴍᴇ : {file_name}
 
-▷ ғɪʟᴇ sɪᴢᴇ : {file_size}
+⍟ ғɪʟᴇ sɪᴢᴇ : {file_size}
 
-‣ @KLxFiles ‣ @KLMovieGroup</b>"""    
+‣ @KLxFiles 
+‣ @KLMovieGroup</b>"""    
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
@@ -176,8 +177,7 @@ Name - {}"""
 ◉) Type Name With Year..!
 ◉) Check Your Correct Spelling..!
 ◉) Movie Is Not Available in My Database.. Report To Admin @KLAdmin1Bot</b>
-```
-❌ Don't Ask Theater Print 🥴..!```"""
+```❌ Don't Ask Theater Print 🥴..!```"""
 
     CUDNT_FND = """<b>➠ No Movie Found For Your Query <u>{}</u>
 
