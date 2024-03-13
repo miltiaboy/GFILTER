@@ -176,10 +176,8 @@ Name - {}"""
 ◉) OTT Or DVD Not Released..!
 ◉) Type Name With Year..!
 ◉) Check Your Correct Spelling..!
-◉) Movie Is Not Available in My Database.. Report To Admin @KLAdmin1Bot</b>
-
-```
-❌ Don't Ask Theater Print 🥴..!```
+◉) Movie Is Not Available in My Database.. Report To Admin @KLAdmin1Bot</b>```
+Don't Ask Theater Print 🥴..!```
 """
 
     CUDNT_FND = """<b>➠ No Movie Found For Your Query <u>{}</u>
