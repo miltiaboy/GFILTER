@@ -17,7 +17,7 @@ async def save_group(bot, message):
             total=await bot.get_chat_members_count(message.chat.id)
             user = message.from_user.mention if message.from_user else "Dear" 
             group_link = await message.chat.export_invite_link()
-            await bot.send_message(LOG_CHANNEL, script.NEW_GROUP_TXT.format(temp.B_LINK, message.chat.title, message.chat.id, message.chat.username, group_link, total, user), disable_web_page_preview=True)  
+            await bot.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(temp.B_LINK, message.chat.title, message.chat.id, message.chat.username, group_link, total, user), disable_web_page_preview=True)  
             await db.add_chat(message.chat.id, message.chat.title)
             btn = [[
                 InlineKeyboardButton('⚡️ sᴜᴘᴘᴏʀᴛ ⚡️', url="https://t.me/KLAdmin1Bot"),
