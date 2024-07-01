@@ -92,7 +92,7 @@ class script(object):
 ◉ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : <code>{}</code>
 ◉ ғʀᴇᴇ sᴛᴏʀᴀɢᴇ : <code>{}</code></b>"""   
 
-    NEW_GROUP_TXT = """#New_Group {}
+    LOG_TEXT_G = """#New_Group {}
 
 ○ Group name - {}
 ○ Id - <code>{}</code> 
@@ -101,7 +101,7 @@ class script(object):
 ○ Total members - <code>{}</code>
 ○ User - {}"""
     
-    LOG_TEXT_G = """#NewUser
+    NEW_GROUP_TXT = """#NewUser
  <b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}(<code>{b}</code>)</b>
  <b>᚛› 𝐆 𝐈𝐃 ⪼ @{c}
  <b>᚛› 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ {d}</b>
