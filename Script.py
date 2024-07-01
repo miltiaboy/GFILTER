@@ -92,13 +92,13 @@ class script(object):
 ◉ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : <code>{}</code>
 ◉ ғʀᴇᴇ sᴛᴏʀᴀɢᴇ : <code>{}</code></b>"""   
 
-    LOG_TEXT_G = """#New_Group {}
+    LOG_TEXT_G = """#New_Group - {}
 
-○ Group name - {}
+○ Group Name - {}
 ○ Id - <code>{}</code> 
-○ Group username - @{}
-○ Group link - {}
-○ Total members - <code>{}</code>
+○ Group Username - @{}
+○ Group Link - {}
+○ Total Members - <code>{}</code>
 ○ User - {}"""
     
     NEW_GROUP_TXT = """#NewUser
