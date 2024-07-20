@@ -1041,13 +1041,13 @@ async def auto_filter(client, msg, spoll=False):
     grp_id = message.chat.id
     try:
         await asyncio.sleep(250)
-        await message.delete(True)
-        await send.delete(True)
+        await message.delete()
+        await send.delete()
     except Exception as e:
         logger.exception(e)
         await asyncio.sleep(250)
-        await message.delete(True)
-        await send.delete(True)
+        await message.delete()
+        await send.delete()
       
 async def advantage_spell_chok(client, msg):
     mv_id = msg.id
