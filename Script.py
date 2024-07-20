@@ -64,6 +64,16 @@ class script(object):
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
 
+    FSUB_MSG = """<b><u>REQUEST FORCESUB MOD</u></b>
+    
+<blockquote><b>• This Module Only Works For My Admin</b></blockquote>
+  
+/setchat :- <code>Add ForceSub / Request Channel Id</code>
+/delchat :- <code>Deleted ForceSub Channel</code>
+/viewchat :- <code>Get Saved ForceSub Channel Detail</code>
+/totalrequests :- <code>Get Total Request Counts On Current FSub Channel</code>
+/purgerequests :- <code>Clear Requests On Current FSub Channel</code>"""
+    
     ADMIN_TXT = """<b><u>ADMIN MODS COMMANDS</u></b>
     
 • /logs - <code>to get the rescent errors</code>
