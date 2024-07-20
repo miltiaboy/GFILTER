@@ -582,7 +582,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ', callback_data='coct'),
             InlineKeyboardButton('ᴇxᴛʀᴀ ᴍᴏᴅs', callback_data='extra')                        
         ], [
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇏', callback_data='start')            
+            InlineKeyboardButton('⇍ ʜᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('ғᴏʀᴄᴇ sᴜʙ', callback_data='reqfsub')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(                     
@@ -647,6 +648,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.BUTTON_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "reqfsub":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FSUB_MSG,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
