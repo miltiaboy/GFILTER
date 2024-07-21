@@ -29,7 +29,7 @@ class script(object):
 • /del - 𝖣𝖾𝗅𝖾𝗍𝖾 𝖠 𝖲𝗉𝖾𝖼𝗂𝖿𝗂𝖼 𝖥𝗂𝗅𝗍𝖾𝗋 𝖨𝗇 𝖢𝗁𝖺𝗍
 • /delall - 𝖣𝖾𝗅𝖾𝗍𝖾 𝖳𝗁𝖾 𝖶𝗁𝗈𝗅𝖾 𝖥𝗂𝗅𝗍𝖾𝗋𝗌 𝖨𝗇 𝖠 𝖢𝗁𝖺𝗍 (𝖢𝗁𝖺𝗍 𝖮𝗐𝗇𝖾𝗋 𝖮𝗇𝗅𝗒)</b>"""
 
-    BUTTON_TXT = """<b><u>BUTTONS NOTE:-</u></b>
+    BUTTON_TXT = """<b>➪ <u>BUTTONS NOTE:-</u></b>
 
 • ᴛᴇʟᴇɢʀᴀᴍ ᴡɪʟʟ ɴᴏᴛ ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ sᴇɴᴅ ʙᴜᴛᴛᴏɴs ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴄᴏɴᴛᴇɴᴛ, sᴏ ᴄᴏɴᴛᴇɴᴛ ɪs ᴍᴀɴᴅᴀᴛᴏʀʏ.
 • ɴᴀɴᴄʏ ʙᴏᴛ sᴜᴘᴘᴏʀᴛs ʙᴜᴛᴛᴏɴs ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
@@ -41,13 +41,13 @@ class script(object):
 <b><u>ALERT BUTTONS:-</u></b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
 
-    AUTOFILTER_TXT = """<blockquote><b><u>AUTO FILTER NOTE:-</u>
+    AUTOFILTER_TXT = """<blockquote><b>➪ <u>AUTO FILTER NOTE:-</u>
 
 • ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ's ᴘʀɪᴠᴀᴛᴇ.
 • ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇs ɴᴏᴛ ᴄᴏɴᴛᴀɪɴs ᴄᴀᴍʀɪᴘs, ᴘᴏʀɴ ᴀɴᴅ ꜰᴀᴋᴇ ꜰɪʟᴇs.
 • ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀsᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ ǫᴜᴏᴛᴇs. ɪ'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇs ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ.</b></blockquote>"""
 
-    CONNECTION_TXT = """<b><u>CONNECTIONS NOTE:-</u></b>
+    CONNECTION_TXT = """<b>➪ <u>CONNECTIONS NOTE:-</u></b>
 
 1. ONLY ADMINS CAN ADD A CONNECTION.
 2. SEND <code>/connect</code> FOR CONNECTING ME TO UR PM
@@ -57,14 +57,14 @@ class script(object):
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
 
-    EXTRAMOD_TXT = """<b><u>EXTRA MODULES COMMANDS</u></b>
+    EXTRAMOD_TXT = """<b>➪ <u>EXTRA MODULES COMMANDS</u></b>
 
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
 
-    FSUB_MSG = """<b><u>REQUEST FORCESUB MOD</u></b>
+    FSUB_MSG = """<b>➪ <u>REQUEST FORCESUB MOD</u></b>
     
 <blockquote><b>• This Module Only Works For My Admin</b></blockquote>
   
@@ -74,7 +74,7 @@ class script(object):
 /totalrequests :- <code>Get Total Request Counts On Current FSub Channel</code>
 /purgerequests :- <code>Clear Requests On Current FSub Channel</code>"""
     
-    ADMIN_TXT = """<b><u>ADMIN MODS COMMANDS</u></b>
+    ADMIN_TXT = """<b>➪ <u>ADMIN MODS COMMANDS</u></b>
     
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
@@ -217,16 +217,15 @@ class script(object):
 <b>⍟ Wᴇʟᴄᴏᴍᴇ Tᴏ Tᴇᴀᴍ Kʟ Lɪɴᴋs ⍟</b>"""
 
     FIlTERS_TXT = """
-<b>Tʜᴇsᴇ Aʀᴇ Mʏ Tʜʀᴇᴇ Tʏᴘᴇs Oғ Fɪʟᴛᴇʀs.</b>"""
+<b>ᴛʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs..</b>"""
 
-    GLOBE_TXT = """
-<b>Wᴇʟᴄᴏᴍᴇ ᴛᴏ Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs. Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs ᴀʀᴇ ᴛʜᴇ ғɪʟᴛᴇʀs sᴇᴛ ʙʏ ʙᴏᴛ ᴀᴅᴍɪɴs ᴡʜɪᴄʜ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴀʟʟ ɢʀᴏᴜᴘs.</b>
-    
-Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
-• /gfilter - <code>Tᴏ ᴄʀᴇᴀᴛᴇ ᴀ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ.</code>
-• /gfilters - <code>Tᴏ ᴠɪᴇᴡ ᴀʟʟ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀs.</code>
-• /delg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ.</code>
-• /delallg - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ.</code>"""
+    GLOBE_TXT = """<b>➪ 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 𝖦𝗅𝗈𝖻𝖺𝗅 𝖥𝗂𝗅𝗍𝖾𝗋𝗌. 𝖦𝗅𝗈𝖻𝖺𝗅 𝖥𝗂𝗅𝗍𝖾𝗋𝗌 𝖠𝗋𝖾 𝖳𝗁𝖾 𝖥𝗂𝗅𝗍𝖾𝗋𝗌 𝖲𝖾𝗍 𝖡𝗒 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇𝗌 𝖶𝗁𝗂𝖼𝗁 𝖶𝗂𝗅𝗅 𝖶𝗈𝗋𝗄 𝖮𝗇 𝖠𝗅𝗅 𝖦𝗋𝗈𝗎𝗉𝗌.
+
+➪ <u>𝖠𝖵𝖠𝖨𝖫𝖠𝖡𝖫𝖤 𝖢𝖮𝖬𝖬𝖠𝖭𝖣𝖲:</u>
+• /gfilter - To Create A Global Filters.
+• /gfilters - To View All Global Filters.
+• /delg - To Delete A Particular Global Filters.
+• /delallg - To Delete All Global Filters.</b>"""
 
     FILE_STORE_TXT = """
 <b>Fɪʟᴇ sᴛᴏʀᴇ ɪs ᴛʜᴇ ғᴇᴀᴛᴜʀᴇ ᴡʜɪᴄʜ ᴡɪʟʟ ᴄʀᴇᴀᴛᴇ ᴀ sʜᴀʀᴇᴀʙʟᴇ ʟɪɴᴋ ᴏғ ᴀ sɪɴɢʟᴇ ᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ғɪʟᴇs.</b>
