@@ -674,7 +674,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "autofilter":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='filters'),
-            InlineKeyboardButton('ꜰɪʟᴇꜱ ɪɴᴅᴇx',callback_data='fileindexx')
+            InlineKeyboardButton('ꜰɪʟᴇꜱ ɪɴᴅᴇx',callback_data='findx')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -682,9 +682,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "fileindexx":
+    elif query.data == "findx":
         buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ᴛᴏ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ᴘᴀɢᴇ', callback_data='filters')
+            InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ᴘᴀɢᴇ', callback_data='autofilter')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
