@@ -12,11 +12,10 @@ class script(object):
     
     ABOUT_TXT = """<b>◆ ᴍʏ ɴᴀᴍᴇ : <a href='https://t.me/Oru_adaar_Robot'>♡ Nᴀɴᴄʏ ᵛ³</a>
 ◆ ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/Hacker_Jr'>HᴀᴄKᴇʀ Jʀ 〆⁪⁬⁮⁮⁮</a>
-◆ ʟɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>ᴘʀᴏɢʀᴀᴍ</a>
+◆ ʟɪʙʀᴀʀʏ: <a href='https://pyrofork.mayuri.my.id/'>ᴘʏʀᴏғᴏʀᴋ</a>
 ◆ ʟᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/'>ᴘʏᴛʜᴏɴ 𝟹</a>
 ◆ ᴅᴀᴛᴀ ʙᴀsᴇ: <a href='https://cloud.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a>
-◆ ʙᴏᴛ sᴇʀᴠᴇʀ: <a href='tg://settings'>ᴘʀɪᴠᴀᴛᴇ</a>
-◆ ʙᴜɪʟᴅ sᴛᴀᴛᴜs: v4.5 [ sᴛᴀʙʟᴇ ]</b>"""
+◆ ʙᴏᴛ sᴇʀᴠᴇʀ: <a href='tg://settings'>ᴘʀɪᴠᴀᴛᴇ</a></b>"""
     
     SOURCE_TXT = """<b>ᴛʜɪꜱ ɴᴏᴛ ᴀɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
 
