@@ -36,17 +36,17 @@ Filter Is The Feature Were Users Can Set Automated Replies For A Particular Keyw
 • /del - Delete A Specific Filter In Chat
 • /delall - Delete The Whole Filters In A Chat (Chat Owner Only)</b>"""
 
-    BUTTON_TXT = """<b>➪ <u>BUTTONS NOTE:-</u></b>
+    BUTTON_TXT = """<b>➪ <u>BUTTONS NOTE:</u>
 
-• ᴛᴇʟᴇɢʀᴀᴍ ᴡɪʟʟ ɴᴏᴛ ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ sᴇɴᴅ ʙᴜᴛᴛᴏɴs ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴄᴏɴᴛᴇɴᴛ, sᴏ ᴄᴏɴᴛᴇɴᴛ ɪs ᴍᴀɴᴅᴀᴛᴏʀʏ.
-• ɴᴀɴᴄʏ ʙᴏᴛ sᴜᴘᴘᴏʀᴛs ʙᴜᴛᴛᴏɴs ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
-• ʙᴜᴛᴛᴏɴs sʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀsᴇᴅ ᴀs ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ.
+➥ Telegram Will Not Allows You To Send Buttons Without Any Content, So Content Is Mandatory.
+➥ This Bot Supports Buttons With Any Telegram Media Type.
+➥ Buttons Should Be Properly Parsed As Markdown Format.
 
-<b><u>URL BUTTONS:-</u></b>
-<code>[Button Text](buttonurl:https://t.me/Oru_adaar_Robot)</code>
+<u>➪ URL BUTTONS:</u>
+[Button Text](buttonurl:https://t.me/Team_KL)
 
-<b><u>ALERT BUTTONS:-</u></b>
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
+<u>➪ ALERT BUTTONS:</u>
+[Button Text](buttonalert:This Is An Alert Message)</b>"""
 
     AUTOFILTER_TXT = """<blockquote><b>➪ <u>AUTO FILTER NOTE:-</u>
 
