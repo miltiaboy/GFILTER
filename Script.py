@@ -20,14 +20,14 @@ class script(object):
     
     SOURCE_TXT = """<b>ᴛʜɪꜱ ɴᴏᴛ ᴀɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
 
-»sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ~ ᴘʀɪᴠᴀᴛᴇ 🤒</b>"""
+» sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ~ ᴘʀɪᴠᴀᴛᴇ 🤒</b>"""
 
-    MANUELFILTER_TXT = """<b><u>FILTERS COMMANDS</u></b>
+    MANUELFILTER_TXT = """<b>➪ <u>𝖥𝖨𝖫𝖳𝖤𝖱𝖲 𝖢𝖮𝖬𝖬𝖠𝖭𝖣𝖲</u>
 
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+• /filter - 𝖠𝖽𝖽 𝖠 𝖥𝗂𝗅𝗍𝖾𝗋 𝖨𝗇 𝖢𝗁𝖺𝗍
+• /filters - 𝖫𝗂𝗌𝗍 𝖠𝗅𝗅 𝖳𝗁𝖾 𝖥𝗂𝗅𝗍𝖾𝗋𝗌 𝖮𝖿 𝖠 𝖢𝗁𝖺𝗍
+• /del - 𝖣𝖾𝗅𝖾𝗍𝖾 𝖠 𝖲𝗉𝖾𝖼𝗂𝖿𝗂𝖼 𝖥𝗂𝗅𝗍𝖾𝗋 𝖨𝗇 𝖢𝗁𝖺𝗍
+• /delall - 𝖣𝖾𝗅𝖾𝗍𝖾 𝖳𝗁𝖾 𝖶𝗁𝗈𝗅𝖾 𝖥𝗂𝗅𝗍𝖾𝗋𝗌 𝖨𝗇 𝖠 𝖢𝗁𝖺𝗍 (𝖢𝗁𝖺𝗍 𝖮𝗐𝗇𝖾𝗋 𝖮𝗇𝗅𝗒)</b>"""
 
     BUTTON_TXT = """<b><u>BUTTONS NOTE:-</u></b>
 
