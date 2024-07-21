@@ -22,12 +22,19 @@ class script(object):
 
 » sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ~ ᴘʀɪᴠᴀᴛᴇ 🤒</b>"""
 
-    MANUELFILTER_TXT = """<b>➪ <u>𝖥𝖨𝖫𝖳𝖤𝖱𝖲 𝖢𝖮𝖬𝖬𝖠𝖭𝖣𝖲</u>
+    MANUELFILTER_TXT = """<b>➪ <u>MANUAL FILTER NOTE</u>
+    
+Filter Is The Feature Were Users Can Set Automated Replies For A Particular Keyword And I Will Respond Whenever A Keyword Is Found The Message.
 
-• /filter - 𝖠𝖽𝖽 𝖠 𝖥𝗂𝗅𝗍𝖾𝗋 𝖨𝗇 𝖢𝗁𝖺𝗍
-• /filters - 𝖫𝗂𝗌𝗍 𝖠𝗅𝗅 𝖳𝗁𝖾 𝖥𝗂𝗅𝗍𝖾𝗋𝗌 𝖮𝖿 𝖠 𝖢𝗁𝖺𝗍
-• /del - 𝖣𝖾𝗅𝖾𝗍𝖾 𝖠 𝖲𝗉𝖾𝖼𝗂𝖿𝗂𝖼 𝖥𝗂𝗅𝗍𝖾𝗋 𝖨𝗇 𝖢𝗁𝖺𝗍
-• /delall - 𝖣𝖾𝗅𝖾𝗍𝖾 𝖳𝗁𝖾 𝖶𝗁𝗈𝗅𝖾 𝖥𝗂𝗅𝗍𝖾𝗋𝗌 𝖨𝗇 𝖠 𝖢𝗁𝖺𝗍 (𝖢𝗁𝖺𝗍 𝖮𝗐𝗇𝖾𝗋 𝖮𝗇𝗅𝗒)</b>"""
+➥ This Bot Should Have Admin Privilege
+➥ Only Admins Can Add Filters In A Chat
+➥ Alert Buttons Have A Limit Of 64 Characters
+    
+➪ <u>𝖠𝖵𝖠𝖨𝖫𝖠𝖡𝖫𝖤 𝖢𝖮𝖬𝖬𝖠𝖭𝖣𝖲:</u>
+• /filter - Add A Filter In Chat
+• /filters - List All The Filters Of A Chat
+• /del - Delete A Specific Filter In Chat
+• /delall - Delete The Whole Filters In A Chat (Chat Owner Only)</b>"""
 
     BUTTON_TXT = """<b>➪ <u>BUTTONS NOTE:-</u></b>
 
