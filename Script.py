@@ -48,11 +48,20 @@ Filter Is The Feature Were Users Can Set Automated Replies For A Particular Keyw
 <u>➪ ALERT BUTTONS:</u>
 [Button Text](buttonalert:This Is An Alert Message)</b>"""
 
-    AUTOFILTER_TXT = """<blockquote><b>➪ <u>AUTO FILTER NOTE:-</u>
+    AUTOFILTER_TXT = """<b>➪ <u>AUTO FILTER NOTE:</u>
+    
+AutoFilter Module Searches IMDB For Movie Details And Database For Files And Sends Results For Each Message In A Groups.
 
-• ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ's ᴘʀɪᴠᴀᴛᴇ.
-• ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇs ɴᴏᴛ ᴄᴏɴᴛᴀɪɴs ᴄᴀᴍʀɪᴘs, ᴘᴏʀɴ ᴀɴᴅ ꜰᴀᴋᴇ ꜰɪʟᴇs.
-• ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀsᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ ǫᴜᴏᴛᴇs. ɪ'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇs ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ.</b></blockquote>"""
+➥ Enable  : /autofilter on
+➥ Disable : /autofilter off
+
+• This Command Only Works For My Admin</b>"""
+
+    FILEINDEX_TXT = """<blockquote><b>➪ <u>FILE INDEX NOTE:<u>
+
+➥ Make Me The Admin Of Your Channel If It's Private.
+➥ Make Sure That Your Channel Does Not Contains Camrips, Porn And Fake Files.
+➥ Forward The Last Message To Me With Quotes. I'll Add All The Files In That Channel To My Database.</b></blockquote>"""
 
     CONNECTION_TXT = """<b>➪ <u>CONNECTIONS NOTE:-</u></b>
 
