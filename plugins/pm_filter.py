@@ -673,11 +673,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "autofilter":
         buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='filters')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='filters'),
+            InlineKeyboardButton('ꜰɪʟᴇꜱ ɪɴᴅᴇx',callback_data='fileindexx')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.AUTOFILTER_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "fileindexx":
+        buttons = [[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ᴛᴏ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ᴘᴀɢᴇ', callback_data='filters')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FILEINDEX_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
