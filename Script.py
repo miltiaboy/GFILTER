@@ -22,7 +22,7 @@ class script(object):
 
 » sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ~ ᴘʀɪᴠᴀᴛᴇ 🤒</b>"""
 
-    MANUELFILTER_TXT = """<b>➪ <u>MANUAL FILTER NOTE</u>
+    MANUELFILTER_TXT = """<b>➪ <u>MANUAL FILTER NOTE:</u>
     
 Filter Is The Feature Were Users Can Set Automated Replies For A Particular Keyword And I Will Respond Whenever A Keyword Is Found The Message.
 
@@ -63,34 +63,37 @@ AutoFilter Module Searches IMDB For Movie Details And Database For Files And Sen
 ➥ Make Sure That Your Channel Does Not Contains Camrips, Porn And Fake Files.
 ➥ Forward The Last Message To Me With Quotes. I'll Add All The Files In That Channel To My Database.</b></blockquote>"""
 
-    CONNECTION_TXT = """<b>➪ <u>CONNECTIONS NOTE:-</u></b>
-
-1. ONLY ADMINS CAN ADD A CONNECTION.
-2. SEND <code>/connect</code> FOR CONNECTING ME TO UR PM
-
-<b><u>COMMANDS AND USAGE:-</u></b>
-• /connect  - <code>connect a particular chat to your PM</code>
-• /disconnect  - <code>disconnect from a chat</code>
-• /connections - <code>list all your connections</code>"""
-
-    EXTRAMOD_TXT = """<b>➪ <u>EXTRA MODULES COMMANDS</u></b>
-
-• /id - <code>get id of a specified user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
-
-    FSUB_MSG = """<b>➪ <u>REQUEST FORCESUB MOD</u></b>
+    CONNECTION_TXT = """<b>➪ <u>CONNECTIONS NOTE:</u>
     
-<blockquote><b>• This Module Only Works For My Admin</b></blockquote>
-  
-/setchat :- <code>Add ForceSub / Request Channel Id</code>
-/delchat :- <code>Deleted ForceSub Channel</code>
-/viewchat :- <code>Get Saved ForceSub Channel Detail</code>
-/totalrequests :- <code>Get Total Request Counts On Current FSub Channel</code>
-/purgerequests :- <code>Clear Requests On Current FSub Channel</code>"""
+Used To Connect Bot To PM For Managing Filters 
+It Helps To Avoid Spamming In Groups.
+
+➥ Only Admins Can Add A Connection.
+➥ Send <code>/connect</code> For Connecting Me To YOUR PM
+
+➪ <u>𝖠𝖵𝖠𝖨𝖫𝖠𝖡𝖫𝖤 𝖢𝖮𝖬𝖬𝖠𝖭𝖣𝖲:</u>
+• /connect  - Connect A Particular Chat To Your PM
+• /disconnect  - Disconnect From A Chat
+• /connections - List All Your Connections</b>"""
+
+    EXTRAMOD_TXT = """<b>➪ <u>EXTRA MODULES COMMANDS:</u>
+
+• /id - Get Id of A Specified User.
+• /info  - Get Information About A User.
+• /imdb  - Get The Film Information From IMDb Source.
+• /search  - Get The Film Information From Various Sources.</b>"""
+
+    FSUB_MSG = """<b>➪ <u>REQUEST FORCESUB MOD:</u>
     
-    ADMIN_TXT = """<b>➪ <u>ADMIN MODS COMMANDS</u></b>
+➥ This Module Only Works For My Admin
+
+/setchat : Add ForceSub / Request Channel Id
+/delchat : Deleted ForceSub Channel
+/viewchat : Get Saved ForceSub Channel Detail
+/totalrequests : Get Total Request Counts On Current FSub Channel
+/purgerequests : Clear Requests On Current FSub Channel</b>"""
+    
+    ADMIN_TXT = """<b>➪ <u>ADMIN MODS COMMANDS:</u></b>
     
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
