@@ -42,22 +42,22 @@ Filter Is The Feature Were Users Can Set Automated Replies For A Particular Keyw
 ➥ This Bot Supports Buttons With Any Telegram Media Type.
 ➥ Buttons Should Be Properly Parsed As Markdown Format.
 
-<u>➪ URL BUTTONS:</u>
+➪ <u>URL BUTTONS:</u>
 [Button Text](buttonurl:https://t.me/Team_KL)
 
-<u>➪ ALERT BUTTONS:</u>
+➪ <u>ALERT BUTTONS:</u>
 [Button Text](buttonalert:This Is An Alert Message)</b>"""
 
     AUTOFILTER_TXT = """<b>➪ <u>AUTO FILTER NOTE:</u>
     
 AutoFilter Module Searches IMDB For Movie Details And Database For Files And Sends Results For Each Message In A Groups.
 
+• This Command Only Works For My Admin
+
 ➥ Enable  : /autofilter on
-➥ Disable : /autofilter off
+➥ Disable : /autofilter off</b>"""
 
-• This Command Only Works For My Admin</b>"""
-
-    FILEINDEX_TXT = """<blockquote><b>➪ <u>FILE INDEX NOTE:<u>
+    FILEINDEX_TXT = """<blockquote><b>➪ <u>FILE INDEX NOTE:</u>
 
 ➥ Make Me The Admin Of Your Channel If It's Private.
 ➥ Make Sure That Your Channel Does Not Contains Camrips, Porn And Fake Files.
