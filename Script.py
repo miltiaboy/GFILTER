@@ -164,12 +164,11 @@ It Helps To Avoid Spamming In Groups.
 
 ★ ροωєяє∂ ϐγ : @Team_KL</b>"""
    
-    CUSTOM_FILE_CAPTION = """<b>⍟ ғɪʟᴇ ɴᴀᴍᴇ : {file_name}
-
-⍟ ғɪʟᴇ sɪᴢᴇ : {file_size}
-
-‣ @KLxFiles 
-‣ @KLMovieGroup</b>"""    
+    CUSTOM_FILE_CAPTION = """<b>{file_name}
+    
+➠ @KLxFiles 
+➠ @KLMovieGroup  
+➠ @KeralaRockersGroup</b>"""    
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
