@@ -168,7 +168,7 @@ It Helps To Avoid Spamming In Groups.
     
 ➠ @KLxFiles 
 ➠ @KLMovieGroup  
-➠ @KeralaRockersGroup</b>"""    
+➠ @KeralaRockers_Group</b>"""    
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
