@@ -165,6 +165,27 @@ async def get_poster(query, bulk=False, id=False, file=None):
         'url':f'https://www.imdb.com/title/tt{movieid}'
     }
 
+async def broadcast_messages(user_id, message):
+    try:
+        await message.copy(chat_id=user_id)
+        return True, "Success"
+    except FloodWait as e:
+        await asyncio.sleep(e.x)
+        return await broadcast_messages(user_id, message)
+    except InputUserDeactivated:
+        await db.delete_user(int(user_id))
+        logging.info(f"{user_id}-Removed from Database, since deleted account.")
+        return False, "Deleted"
+    except UserIsBlocked:
+        logging.info(f"{user_id} -Blocked the bot.")
+        return False, "Blocked"
+    except PeerIdInvalid:
+        await db.delete_user(int(user_id))
+        logging.info(f"{user_id} - PeerIdInvalid")
+        return False, "Error"
+    except Exception as e:
+        return False, "Error"
+        
 async def search_gagala(text):
     usr_agent = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -177,7 +198,6 @@ async def search_gagala(text):
     soup = BeautifulSoup(response.text, 'html.parser')
     titles = soup.find_all( 'h3' )
     return [title.getText() for title in titles]
-
 
 async def get_settings(group_id):
     settings = temp.SETTINGS.get(group_id)
