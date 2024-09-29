@@ -36,6 +36,8 @@ class temp(object):
     ME = None
     CURRENT=int(os.environ.get("SKIP", 2))
     CANCEL = False
+    USERS_CANCEL = False
+    GROUPS_CANCEL = False    
     MELCOW = {}
     U_NAME = None
     B_NAME = None
@@ -165,19 +167,22 @@ async def get_poster(query, bulk=False, id=False, file=None):
         'url':f'https://www.imdb.com/title/tt{movieid}'
     }
 
-async def broadcast_messages(user_id, message):
+async def users_broadcast(user_id, message, is_pin):
     try:
-        await message.copy(chat_id=user_id)
+        m=await message.copy(chat_id=user_id)
+        if is_pin:
+            await m.pin(both_sides=True)
         return True, "Success"
     except FloodWait as e:
         await asyncio.sleep(e.x)
-        return await broadcast_messages(user_id, message)
+        return await users_broadcast(user_id, message)
     except InputUserDeactivated:
         await db.delete_user(int(user_id))
         logging.info(f"{user_id}-Removed from Database, since deleted account.")
         return False, "Deleted"
     except UserIsBlocked:
         logging.info(f"{user_id} -Blocked the bot.")
+        await db.delete_user(user_id)
         return False, "Blocked"
     except PeerIdInvalid:
         await db.delete_user(int(user_id))
@@ -185,6 +190,22 @@ async def broadcast_messages(user_id, message):
         return False, "Error"
     except Exception as e:
         return False, "Error"
+
+async def groups_broadcast(chat_id, message, is_pin):
+    try:
+        m = await message.copy(chat_id=chat_id)
+        if is_pin:
+            try:
+                await m.pin()
+            except:
+                pass
+        return "Success"
+    except FloodWait as e:
+        await asyncio.sleep(e.x)
+        return await groups_broadcast(chat_id, message)
+    except Exception as e:
+        await db.delete_chat(chat_id)
+        return "Error"
         
 async def search_gagala(text):
     usr_agent = {
@@ -462,3 +483,12 @@ def humanbytes(size):
         size /= power
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
+
+def get_readable_time(seconds):
+    periods = [('days', 86400), ('hour', 3600), ('min', 60), ('sec', 1)]
+    result = ''
+    for period_name, period_seconds in periods:
+        if seconds >= period_seconds:
+            period_value, seconds = divmod(seconds, period_seconds)
+            result += f'{int(period_value)}{period_name}'
+    return result
