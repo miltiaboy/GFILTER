@@ -3,9 +3,10 @@ from pyrogram import Client, enums
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from Script import script
+from utils import check_loop_sub, get_size
 from database.join_reqs import JoinReqs
-from info import REQ_CHANNEL, AUTH_CHANNEL, JOIN_REQS_DB, ADMINS
-
+from info import REQ_CHANNEL, AUTH_CHANNEL, JOIN_REQS_DB, ADMINS, CUSTOM_FILE_CAPTION
+from database.ia_filterdb import get_file_details
 from logging import getLogger
 
 logger = getLogger(__name__)
@@ -92,21 +93,11 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         else:
             return True
     except UserNotParticipant:
-        text="""** ❗ READ THIS INSTRUCTION ❗
-
-• In Order To Get The Movie Requested By You in Our Group, You Must Have To Join Our Official Channel First By Clicking Request To Join Channel Button Or The Link Shown Below. After That, Click Try Again Button. I'll Send You That Movie 
-
-👇 CLICK REQUEST TO JOIN CHANNEL & CLICK TRY AGAIN 👇**"""
+        text=f"""<b>ㅤ❗ READ THIS INSTRUCTION ❗\n\nTo Get The {update.from_user.mention} 🙋‍♂️ File, You Just Have To Do One Thing, Click On The Below ❝ 𝖩𝖮𝖨𝖭 MOVIES 𝖢𝖧𝖠𝖭𝖭𝖤𝖫 ❞ Button And Then Click On ❝ 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖳𝗈 𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ❞ And Then You Will Get The File...!\n\n{update.from_user.mention} 🙋‍♂️ഫയൽ ലഭിക്കാൻ ഒരൊറ്റ ഒരു കാര്യം ചെയ്താൽ മതി താഴെ കാണുന്ന ❝ 𝖩𝖮𝖨𝖭 MOVIES 𝖢𝖧𝖠𝖭𝖭𝖤𝖫 ❞ ബട്ടൻ ക്ലിക്ക് ചെയ്തിട്ട് ❝ 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖳𝗈 𝖩𝗈𝗂𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ❞ ക്ലിക്ക് ചെയ്താൽ അപ്പോൾ തന്നെ ഫയൽ ലഭിക്കും...!</b>"""
 
         buttons = [
             [
-                InlineKeyboardButton("🔮 Rᴇǫᴜᴇsᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ 🔮", url=invite_link)
-            ],
-            [
-                InlineKeyboardButton(" 🔄 Tʀʏ Aɢᴀɪɴ 🔄 ", callback_data=f"{mode}#{file_id}")
-            ],
-            [
-               InlineKeyboardButton("🤷 Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ Jᴏɪɴɪɴɢ 🤷", callback_data='whyjoin')
+                InlineKeyboardButton("« 𝖩𝖮𝖨𝖭 MOVIES 𝖢𝖧𝖠𝖭𝖭𝖤𝖫 »", url=invite_link)
             ]
         ]
 
@@ -114,12 +105,20 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
             buttons.pop()
 
         if not is_cb:
-            await update.reply(
+            sh = await update.reply(
                 text=text,
                 quote=True,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=enums.ParseMode.MARKDOWN,
+                parse_mode=enums.ParseMode.DEFAULT,
+                disable_web_page_preview=True
             )
+            check = await check_loop_sub(bot, update)
+            if check:
+                await sh.delete()  
+                await update.delete()
+                await send_file(bot, update, mode, file_id)                
+            else:
+                return False
         return False
 
     except FloodWait as e:
@@ -136,7 +135,44 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         )
         return False
 
-
 def set_global_invite(url: str):
     global INVITE_LINK
     INVITE_LINK = url
+
+async def send_file(client, query, ident, file_id):
+    files_ = await get_file_details(file_id)
+    if not files_:
+        await query.reply("please Try again, I haved added your id to forse sub id list")
+        return
+    files = files_[0]
+    title = '@Team_KL ~ ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
+    size=get_size(files.file_size)
+    f_caption = files.file_name
+    if CUSTOM_FILE_CAPTION:
+        try:
+            f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
+                                                   file_size='' if size is None else size,
+                                                   file_caption='' if f_caption is None else f_caption)
+        except Exception as e:
+            logger.exception(e)
+            f_caption = f_caption
+    if f_caption is None:
+        f_caption = f"@Team_KL ~ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
+    msg = await client.send_cached_media(
+        chat_id=query.from_user.id,
+        file_id=file_id,
+        caption=f_caption,        
+        reply_markup=InlineKeyboardMarkup(
+                          [
+                            [                            
+                            InlineKeyboardButton('♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽', url=f'https://t.me/+PqryZGuwC3w4NTA1')
+                           ]
+                        ]
+                    )
+    )
+    k = await msg.reply("<b>ㅤㅤㅤ❗️❗️<u>IMPORTANT</u>❗️️❗️\n\nThis File Will Be Deleted From Here Within <u>15 Minute</u>. Please Forward This File To Your Saved Messages And Start Downloading There.</b>",quote=True)
+    await asyncio.sleep(60)
+    await msg.delete()
+    await k.delete()
+
+    
