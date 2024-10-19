@@ -255,9 +255,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🎭 𝗠𝗢𝗩𝗜𝗘 𝗥𝗘𝗤𝗨𝗘𝗦𝗧 𝗚𝗥𝗢𝗨𝗣 🎭', url=f'https://t.me/+PqryZGuwC3w4NTA1')
-            ],[  
-              InlineKeyboardButton('🍿 𝗝𝗢𝗜𝗡 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗠𝗢𝗩𝗜𝗘𝗦 🍿', url="https://t.me/+F3aZLBpIyMpmY2Y1")  
+              InlineKeyboardButton('♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽', url=f'https://t.me/+PqryZGuwC3w4NTA1')
              ]
             ]
         )
