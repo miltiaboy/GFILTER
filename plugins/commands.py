@@ -31,12 +31,9 @@ async def start(client, message):
                     InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ғᴏʀ ʜᴇʟᴘ•', url='t.me/Oru_adaar_Robot?start=help')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        kd = await message.reply_photo(
+        await message.reply_photo(
         photo=random.choice(PICS),
         caption=script.STARTER_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
-        await asyncio.sleep(15)
-        await kd.delete()
-        await message.delete()
         
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
@@ -75,7 +72,6 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await message.delete()
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help", "start", "hehe"]:
         if message.command[1] == "subscribe":
@@ -228,9 +224,9 @@ async def start(client, message):
                 except:
                     return
             await msg.edit_caption(f_caption)
-            k = await msg.reply("<b><u>❗️❗️IMPORTANT❗️️❗️</u>\n\n⚠️ This File Will Be Deleted From Here Within <u>10 Minute</u>\n\nPlease Forward This File To Your Saved Messages And Start Download There ☺️.</b>",quote=True)
-            await asyncio.sleep(40)
-            await k.delete()
+     #       k = await msg.reply("<b><u>❗️❗️IMPORTANT❗️️❗️</u>\n\n⚠️ This File Will Be Deleted From Here Within <u>10 Minute</u>\n\nPlease Forward This File To Your Saved Messages And Start Download There ☺️.</b>",quote=True)
+       #     await asyncio.sleep(40)
+    #        await k.delete()
             return
         except:
             pass
@@ -260,11 +256,11 @@ async def start(client, message):
             ]
         )
     )
-    k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.</b>",quote=True)
-    await asyncio.sleep(70)
-    await msg.delete()
-    await k.delete()
-    await message.delete()
+  #  k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.</b>",quote=True)
+#    await asyncio.sleep(70)
+  #  await msg.delete()
+   # await k.delete()
+   # await message.delete()
     return            
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
@@ -506,59 +502,13 @@ async def settings(client, message):
 
         reply_markup = InlineKeyboardMarkup(buttons)
 
-        k = await message.reply_text(
+        await message.reply_text(
             text=f"<b>Change Your Settings for {title} As Your Wish ⚙</b>",
             reply_markup=reply_markup,
             disable_web_page_preview=True,
             parse_mode=enums.ParseMode.HTML,
             reply_to_message_id=message.id
         )
-        await asyncio.sleep(10)
-        await message.delete()
-        await k.delete()
-
-@Client.on_message(filters.command('set_template'))
-async def save_template(client, message):
-    sts = await message.reply("Checking template")
-    userid = message.from_user.id if message.from_user else None
-    if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
-    chat_type = message.chat.type
-
-    if chat_type == enums.ChatType.PRIVATE:
-        grpid = await active_connection(str(userid))
-        if grpid is not None:
-            grp_id = grpid
-            try:
-                chat = await client.get_chat(grpid)
-                title = chat.title
-            except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
-                return
-        else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
-            return
-
-    elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        grp_id = message.chat.id
-        title = message.chat.title
-
-    else:
-        return
-
-    st = await client.get_chat_member(grp_id, userid)
-    if (
-            st.status != enums.ChatMemberStatus.ADMINISTRATOR
-            and st.status != enums.ChatMemberStatus.OWNER
-            and str(userid) not in ADMINS
-    ):
-        return
-
-    if len(message.command) < 2:
-        return await sts.edit("No Input!!")
-    template = message.text.split(" ", 1)[1]
-    await save_group_settings(grp_id, 'template', template)
-    await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
 
 @Client.on_message(filters.command("deletefiles") & filters.user(ADMINS))
 async def deletemultiplefiles(bot, message):
