@@ -1,3 +1,4 @@
+pyrogram
 aiofiles
 git+https://github.com/agronholm/anyio
 aiohttp
@@ -9,7 +10,6 @@ motor==2.5.1
 marshmallow==3.14.1
 umongo==3.0.1
 psutil==5.9.4
-pyrotgfork
 python-dotenv
 pytz
 requests
