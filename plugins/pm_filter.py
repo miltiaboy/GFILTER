@@ -48,15 +48,13 @@ async def pm_text(bot, message):
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore♀️ommands and hashtags
     if user_id in ADMINS: return # ignore admins
-    k = await message.reply_text(
+    await message.reply_text(
          text=f"<b><i>Hɪ Bʀᴏ {user},\n\n• Yᴏᴜ Cᴀɴ'ᴛ Gᴇᴛ Mᴏᴠɪᴇs Fʀᴏᴍ Hᴇʀᴇ. Rᴇǫᴜᴇsᴛ Oɴ Oᴜʀ Mᴏᴠɪᴇ Gʀᴏᴜᴘ Oʀ Cʟɪᴄᴋ Rᴇǫᴜᴇsᴛ Hᴇʀᴇ Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ​\n\n• നിങ്ങൾക്ക് ഇവിടെ നിന്ന് സിനിമകൾ ലഭിക്കില്ല. എന്റെ ഗ്രൂപ്പിൽ ചോദിക്ക്.</i>\n\n• ροωєяє∂ ϐγ :- @Team_KL</b>",   
          reply_markup=InlineKeyboardMarkup([[
              InlineKeyboardButton("💝 Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs 𝟹.𝟶​ 💝", url=f"https://t.me/KLMovieGroup")
              ],[
              InlineKeyboardButton("🎭 Kᴇʀᴀʟᴀ Rᴏᴄᴋᴇʀs 𝟸.𝟶​ 🎭", url=f"https://t.me/KeralaRockers_Group")]]))
-    await asyncio.sleep(45)
-    await k.delete()
-    await message.delete()   
+   
     
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
@@ -1125,27 +1123,7 @@ async def advantage_spell_chok(client, msg):
         await msg.delete()
         await k.delete()
         return
-    movielist += [movie.get('title') for movie in movies]
-    SPELL_CHECK[mv_id] = movielist
-    btn = [
-        [
-            InlineKeyboardButton(
-                text=f"◈ {movie_name.strip()}",
-                callback_data=f"spol#{reqstr1}#{k}",
-            )
-        ]
-        for k, movie_name in enumerate(movielist)
-    ]
-    btn.append([InlineKeyboardButton(text="✘ ᴄʟᴏsᴇ ✘", callback_data=f'spol#{reqstr1}#close_spellcheck')])
-    spell_check_del = await msg.reply_photo(
-        photo=(SNO_IMG),
-        caption=(script.CUDNT_FND.format(mv_rqst)),
-        reply_markup=InlineKeyboardMarkup(btn)
-    )
-    await asyncio.sleep(35)
-    await spell_check_del.delete()
-    await msg.delete()
-
+    
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
