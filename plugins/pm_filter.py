@@ -488,10 +488,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]
             )
         ) 
-        k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.</b>",quote=True)
-        await asyncio.sleep(60)
-        await msg.delete()
-        await k.delete()        
+   #     k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.</b>",quote=True)
+    #    await asyncio.sleep(60)
+    #    await msg.delete()
+  #      await k.delete()        
         return
 
     elif query.data.startswith("killfilesdq"):
@@ -604,11 +604,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='source')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
@@ -1062,14 +1057,14 @@ async def auto_filter(client, msg, spoll=False):
     mention = message.from_user.mention
     grp_id = message.chat.id
     try:
-        await asyncio.sleep(250)
-        await message.delete()
-        await send.delete()
+      #  await asyncio.sleep(250)
+     #   await message.delete()
+      #  await send.delete()
     except Exception as e:
         logger.exception(e)
-        await asyncio.sleep(250)
-        await message.delete()
-        await send.delete()
+     #   await asyncio.sleep(250)
+      #  await message.delete()
+     #   await send.delete()
       
 async def advantage_spell_chok(client, msg):
     mv_id = msg.id
@@ -1102,9 +1097,9 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(35)
-        await msg.delete()
-        await k.delete()      
+      #  await asyncio.sleep(35)
+     #   await msg.delete()
+     #   await k.delete()      
         return
     movielist = []
     if not movies:
@@ -1119,9 +1114,9 @@ async def advantage_spell_chok(client, msg):
             reply_markup=InlineKeyboardMarkup(button),
             reply_to_message_id=msg.id
         )
-        await asyncio.sleep(35)
-        await msg.delete()
-        await k.delete()
+      #  await asyncio.sleep(35)
+      #  await msg.delete()
+    #    await k.delete()
         return
     
 async def manual_filters(client, message, text=False):
@@ -1147,9 +1142,9 @@ async def manual_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(180)
-                            await kk.delete()
-                            await message.delete()
+                        #    await asyncio.sleep(180)
+                        #    await kk.delete()
+                          #  await message.delete()
                         else:
                             button = eval(btn)
                             grg = await client.send_message(
@@ -1159,9 +1154,9 @@ async def manual_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(180)
-                            await grg.delete()
-                            await message.delete()
+                        #    await asyncio.sleep(180)
+                        #    await grg.delete()
+                          #  await message.delete()
                     elif btn == "[]":
                         joelkb = await client.send_cached_media(
                             group_id,
@@ -1169,9 +1164,9 @@ async def manual_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(180)
-                        await joelkb.delete()
-                        await message.delete()
+                      #  await asyncio.sleep(180)
+                      #  await joelkb.delete()
+                       # await message.delete()
                     else:
                         button = eval(btn)
                         dlt = await message.reply_cached_media(
@@ -1180,9 +1175,9 @@ async def manual_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(180)
-                        await dlt.delete()
-                        await message.delete()
+                     #   await asyncio.sleep(180)
+                      #  await dlt.delete()
+                       # await message.delete()
                 except Exception as e:
                     logger.exception(e)
                 break
@@ -1213,9 +1208,9 @@ async def global_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(180)
-                            await joelkb.delete()
-                            await message.delete()
+                          #  await asyncio.sleep(180)
+                          #  await joelkb.delete()
+                            #await message.delete()
                             
                         else:
                             button = eval(btn)
@@ -1226,9 +1221,9 @@ async def global_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(180)
-                            await hmm.delete()
-                            await message.delete()
+                           # await asyncio.sleep(180)
+                          #  await hmm.delete()
+                         #   await message.delete()
 
                     elif btn == "[]":
                         oto = await client.send_cached_media(
@@ -1237,9 +1232,9 @@ async def global_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(180)
-                        await oto.delete()
-                        await message.delete()
+                      #  await asyncio.sleep(180)
+                      #  await oto.delete()
+                    #    await message.delete()
 
                     else:
                         button = eval(btn)
@@ -1249,9 +1244,9 @@ async def global_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(180)
-                        await dlt.delete()
-                        await message.delete()
+                     #   await asyncio.sleep(180)
+                      #  await dlt.delete()
+                      #  await message.delete()
  
                 except Exception as e:
                     logger.exception(e)
