@@ -10,7 +10,7 @@ from info import ADMINS
 #async def goodbye(bot, message):
 	#await message.delete()
 
-@Client.on_message(filters.regex("http") & filters.regex("www") | filters.regex("https") | filters.regex("t.me") & filters.incoming)
+#@Client.on_message(filters.regex("http") & filters.regex("www") | filters.regex("https") | filters.regex("t.me") & filters.incoming)
 async def nolink(bot, message):
     user_id = message.from_user.id
     if user_id in ADMINS: return 
