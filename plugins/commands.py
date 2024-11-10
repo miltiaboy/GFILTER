@@ -256,11 +256,11 @@ async def start(client, message):
             ]
         )
     )
-  #  k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.</b>",quote=True)
-#    await asyncio.sleep(70)
-  #  await msg.delete()
-   # await k.delete()
-   # await message.delete()
+    k = await msg.reply("<b>ㅤㅤ❗️❗️<u>IMPORTANT❗️️❗️</u>\n\nThis File Will Be Deleted From Here Within <u>10 Minute</u>. Please Forward This File To Your Saved Messages And Start Download There.</b>",quote=True)
+    await asyncio.sleep(70)
+    await msg.delete()
+    await k.delete()
+    await message.delete()
     return            
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
