@@ -1,4 +1,4 @@
-pyrotgfork
+pyrogram
 tgcrypto
 pymongo[srv]==3.12.3
 motor==2.5.1
@@ -7,16 +7,11 @@ umongo==3.0.1
 requests
 bs4
 cinemagoer==2023.5.1
-git+https://github.com/agronholm/anyio
-aiohttp
-bs4==0.0.1
-datetime
-pymongo[srv]==3.12.3
-motor==2.5.1
 psutil==5.9.4
-python-dotenv
+aiofiles
+aiohttp==3.7.4
+datetime
 pytz
-tgcrypto
-requests
+aiohttp
 python-math
-python-Levenshtein
+python-dotenv
