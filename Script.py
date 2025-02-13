@@ -1,30 +1,28 @@
 class script(object):
     START_TXT = """<b><blockquote>{} {},    
-ɪ ᴀᴍ ᴀ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴘʀᴏᴠɪᴅɪɴɢ ꜰɪʟᴛᴇʀꜱ 
-ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs, 
-ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ.</blockquote></b>
+ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ.</blockquote></b>
 
 <b><a href=https://t.me/+JQeou0PAx_Y0ZGFl>©𝐓𝐞𝐚𝐦 𝐔𝐫𝐯𝐚𝐬𝐡𝐢 𝐓𝐡𝐞𝐚𝐭𝐞𝐫𝐬™️</a></b>"""
 
-    STARTER_TXT = """<b><blockquote>{} {},    
-ɪ ᴀᴍ ᴀ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴘʀᴏᴠɪᴅɪɴɢ ꜰɪʟᴛᴇʀꜱ 
-ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs, 
-ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ.</blockquote></b>
+    STARTER_TXT = """<b><blockquote>ᴴᵉʸ {} 👏
+   
+ɴᴏ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇɴᴛ ᴏɴʟʏ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛꜱ</blockquote></b>
 
-<b><a href=https://t.me/+JQeou0PAx_Y0ZGFl>©𝐓𝐞𝐚𝐦 𝐔𝐫𝐯𝐚𝐬𝐡𝐢 𝐓𝐡𝐞𝐚𝐭𝐞𝐫𝐬™️</a></b></b>"""
+
+<b><a href=https://t.me/+JQeou0PAx_Y0ZGFl>©𝐓𝐞𝐚𝐦 𝐔𝐫𝐯𝐚𝐬𝐡𝐢 𝐓𝐡𝐞𝐚𝐭𝐞𝐫𝐬™️</a></b>"""
 
     HELPER_TXT = """<b>ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
     
-    ABOUT_TXT = """<b>◆ ᴍʏ ɴᴀᴍᴇ : <a href='https://t.me/Oru_adaar_Robot'>♡ Nᴀɴᴄʏ ᵛ³</a>
-◆ ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/Hacker_Jr'>HᴀᴄKᴇʀ Jʀ 〆⁪⁬⁮⁮⁮</a>
+    ABOUT_TXT = """<b><blockquote>
+◆ ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/PowerOfTG'>〆⁪⁬⁮⁮🇮🇳❤️</a>
 ◆ ʟɪʙʀᴀʀʏ: <a href='https://pyrofork.mayuri.my.id/'>ᴘʏʀᴏғᴏʀᴋ</a>
 ◆ ʟᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/'>ᴘʏᴛʜᴏɴ 𝟹</a>
 ◆ ᴅᴀᴛᴀ ʙᴀsᴇ: <a href='https://cloud.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a>
-◆ ʙᴏᴛ sᴇʀᴠᴇʀ: <a href='tg://settings'>ᴘʀɪᴠᴀᴛᴇ</a></b>"""
+◆ ʙᴏᴛ sᴇʀᴠᴇʀ: <a href='tg://settings'>ᴘʀɪᴠᴀᴛᴇ</a></b></blockquote></b>"""
     
-    SOURCE_TXT = """<b>ᴛʜɪꜱ ɴᴏᴛ ᴀɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
+    SOURCE_TXT = """<b><blockquote>ᴛʜɪꜱ ɴᴏᴛ ᴀɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
 
-» sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ~ ᴘʀɪᴠᴀᴛᴇ 🤒</b>"""
+» sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ~ ᴘʀɪᴠᴀᴛᴇ 🤒</blockquote></b>"""
 
     MANUELFILTER_TXT = """<b>➪ <u>MANUAL FILTER NOTE:</u>
     
@@ -80,7 +78,7 @@ It Helps To Avoid Spamming In Groups.
 • /disconnect  - Disconnect From A Chat
 • /connections - List All Your Connections</b>"""
 
-    EXTRAMOD_TXT = """<b>➪ <u>EXTRA MODULES COMMANDS:</u>
+    EXTRAMOD_TXT = """<b><blockquote>EXTRA MODULES COMMANDS</blockquote></b>
 
 • /id - Get Id of A Specified User.
 • /info  - Get Information About A User.
@@ -119,11 +117,11 @@ It Helps To Avoid Spamming In Groups.
 • /setskip - <code>Skip no of files before indexing</code>
 • /send - <code>Send any message through bot to users. /send (username/userid) reply with message </code>"""
 
-    STATUS_TXT = """
+    STATUS_TXT = """<b><blockquote>
 👩‍❤️‍👨 ᴛᴏᴛᴀʟ ᴜsᴇʀs : <code>{}</code>
 🗣️ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : <code>{}</code>
 🗞️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ : <code>{}</code>
-📚 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ : <code>{}</code></b>"""   
+📚 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ : <code>{}</code></blockquote></b>"""   
 
     LOG_TEXT_G = """<b>#New_Group - {}
 
@@ -160,16 +158,20 @@ It Helps To Avoid Spamming In Groups.
 <b>© Powered by {}</b>
 """
     
-    IMDB_TEMPLATE_TXT = """
+    IMDB_TEMPLATE_TXT = """<b><blockquote>
 <b>⍞ TɪᴛLᴇ : {title}
 ⌬ YᴇAʀ : {year}
 ✇ LᴀNɢUᴀGᴇ : {languages}
 ⛦ RᴀTɪNɢ : {rating} / 10.0
-〄 QᴜAʟIᴛY : HDRip
+〄 QᴜAʟIᴛY : HDRip</blockquote></b>
 
-★ ροωєяє∂ ϐγ : @Team_KL</b>"""
+<b>★ ροωєяє∂ ϐγ : ©𝐓𝐞𝐚𝐦 𝐔𝐫𝐯𝐚𝐬𝐡𝐢 𝐓𝐡𝐞𝐚𝐭𝐞𝐫𝐬™️</b>"""
    
-    CUSTOM_FILE_CAPTION = """<code>{file_name}</code>"""    
+    CUSTOM_FILE_CAPTION = """<b>{file_name}
+    
+➠ @KLxFiles 
+➠ @KLMovieGroup  
+➠ @KeralaRockers_Group</b>"""    
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
@@ -178,7 +180,7 @@ It Helps To Avoid Spamming In Groups.
 ⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code></b>"""
 
-    MELCOW_ENG = """<b>Hᴇʟʟᴏ {}, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ"""
+    MELCOW_ENG = """<b><blockquote>Hᴇʟʟᴏ {}, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ\nᴘʟᴇᴀꜱᴇ ᴀᴅᴅ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴛᴏ ᴏᴜʀ ɢʀᴏᴜᴘ ʙʀᴏ❤️</blockquote></b>\n\n<b><a href=https://t.me/+JQeou0PAx_Y0ZGFl>©𝐓𝐞𝐚𝐦 𝐔𝐫𝐯𝐚𝐬𝐡𝐢 𝐓𝐡𝐞𝐚𝐭𝐞𝐫𝐬™️</a></b>"""
 
     ALRT_TXT = """• This Is Not Your Movie Request.     
 • Don't Click Others Results 🥴."""
