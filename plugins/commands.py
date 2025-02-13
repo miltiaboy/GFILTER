@@ -32,10 +32,7 @@ async def start(client, message):
         return
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[                   
-                    InlineKeyboardButton("• ɢʀᴏᴜᴘ 𝟷 •", url="t.me/KLMovieGroup"),
-                    InlineKeyboardButton("• ​ɢʀᴏᴜᴘ 𝟸 •", url="t.me/KL_Group2")
-                  ],[
-                    InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ғᴏʀ ʜᴇʟᴘ•', url='t.me/Oru_adaar_Robot?start=help')
+                    InlineKeyboardButton("🚸 𝐓𝐞𝐚𝐦 𝐔𝐫𝐯𝐚𝐬𝐡𝐢 𝐓𝐡𝐞𝐚𝐭𝐞𝐫𝐬 🚸", url="https://t.me/+JQeou0PAx_Y0ZGFl"),                    
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -55,10 +52,7 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[      
             InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')    
-            ],[
-            InlineKeyboardButton('sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', callback_data="owner_info")            
-            ],[      
+            ],[                  
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')                    
         ]]   
@@ -84,14 +78,11 @@ async def start(client, message):
         if message.command[1] == "subscribe":
             await ForceSub(client, message)
             return
-        buttons = [[        
+        buttons = [[      
             InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')    
-            ],[
-            InlineKeyboardButton('sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', callback_data="owner_info")            
-            ],[      
+            ],[                  
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')                
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')                    
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -215,7 +206,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [                      
-                      InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url="t.me/+3-LYy1VSn4kxMDI9")
+                      InlineKeyboardButton("♽ Mᴏᴠɪᴇ Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ ♽", url="https://t.me/+JQeou0PAx_Y0ZGFl")
                      ]
                     ]
                 )
